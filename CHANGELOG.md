@@ -9,6 +9,7 @@ Format based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Initial specification based on NFPA 160 (2026 Edition)
+- Product brief with system vision, target users, design decisions, and open questions (`PRODUCT-BRIEF.md`)
 - Entity model overview with relationship diagram (`ENTITY-MODEL.md`)
 - 11 entity specifications:
   - Entity 1: Production/Event

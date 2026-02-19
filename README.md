@@ -32,6 +32,7 @@ This specification defines every data point required by NFPA 160 to produce a su
 ```
 nfpa160-plan-system/
 ├── README.md                          # This file
+├── PRODUCT-BRIEF.md                   # System vision, design decisions, open questions
 ├── ENTITY-MODEL.md                    # Entity relationship overview and data model diagram
 │
 ├── entities/
@@ -61,6 +62,8 @@ nfpa160-plan-system/
 - Issued: April 12, 2025
 - Effective: May 2, 2025
 - Published by: National Fire Protection Association
+
+The full text of the standard is required for development cross-referencing but cannot be committed to the repository. See [PRODUCT-BRIEF.md](PRODUCT-BRIEF.md) for system vision, design decisions, and open questions.
 
 ## Contributing
 
