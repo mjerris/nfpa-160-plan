@@ -2,6 +2,17 @@
 
 Summary of form branching conditions for the questionnaire system. Use this to implement show/hide logic on form fields.
 
+## Primary Entity Type Selection
+
+At the start of a submission, users select which types of fire art they are including. This is the top-level branch that determines which entity workflows are shown.
+
+| Condition | Shows Entity/Workflow | Section |
+|---|---|---|
+| Includes Flame Effects = Yes | Entity 3 workflow (apparatus-based effects, Chapter 9 control systems) | [Ch. 9] |
+| Includes Fire Performances = Yes | Entity 8 workflow (performer-based effects, Chapter 14 props/wicks) | [Ch. 14] |
+
+A submission must include at least one flame effect OR one fire performance. Both can be included in the same submission.
+
 ## Installation Type Conditions
 
 | Condition | Shows Fields For | Section |
@@ -52,11 +63,10 @@ Summary of form branching conditions for the questionnaire system. Use this to i
 | Indoor venue = Yes | Ventilation, combustion air fields; indoor site plan additions | [5.3.2(5)(f)], [B.1.1.2] |
 | Outdoor venue = Yes | Weather/wind, outdoor site plan additions | [B.1.1.1] |
 
-## Optional Entity Conditions
+## Additional Entity Conditions
 
 | Condition | Shows Fields For | Section |
 |---|---|---|
-| Fire performance included = Yes | Entity 8 (all fire performance fields) + fire performance site plan additions | [Ch. 14] |
 | Standby personnel required = Yes | Standby personnel fields (names, equipment knowledge, communication) | [16.4] |
 
 ## Fire Protection Conditions

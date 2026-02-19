@@ -15,7 +15,12 @@ SUBMISSION (Production/Event)
 │   ├── Assistants / Support Personnel
 │   ├── Spotters (fire performance)
 │   └── Standby Fire Safety Personnel
-├── FLAME EFFECTS (one or more per submission)
+│
+├── ══════════════════════════════════════════════════════════
+│   CORE ENTITIES (at least one required per submission)
+│   ══════════════════════════════════════════════════════════
+│
+├── FLAME EFFECTS (zero or more — apparatus-based, Chapter 9)
 │   ├── Effect Identity & Classification
 │   ├── Fuel Specification
 │   │   ├── Gaseous Fuel Fields
@@ -31,13 +36,16 @@ SUBMISSION (Production/Event)
 │   │   └── Firing Procedure
 │   ├── Hazard Area Definition
 │   └── Post-Operation Securing
-├── FIRE PERFORMANCE (Chapter 14 — optional entity)
+│
+├── FIRE PERFORMANCES (zero or more — performer-based, Chapter 14)
 │   ├── Performer Records
 │   ├── Safety Personnel (Spotters)
 │   ├── Fire Props
 │   ├── Fueling Plan
 │   ├── Performance Plan
 │   └── Post-Performance Procedures
+│
+│   ══════════════════════════════════════════════════════════
 ├── PROCEDURES (reusable across submissions)
 │   ├── Operating Procedures
 │   ├── Rehearsal / Pre-Show Procedures
@@ -63,12 +71,12 @@ SUBMISSION (Production/Event)
 
 | Entity | Cardinality | Relationship |
 |---|---|---|
-| Production/Event → Flame Effect | 1 : many | A submission contains one or more flame effects |
+| Production/Event → Flame Effect | 1 : 0..many | Zero or more flame effects per submission |
+| Production/Event → Fire Performance | 1 : 0..many | Zero or more fire performances per submission |
 | Production/Event → Site Plan | 1 : 1 | One site plan per submission |
 | Production/Event → Personnel | 1 : many | One or more operators, assistants, spotters |
 | Production/Event → Procedures | 1 : many | Multiple procedure types per submission |
 | Production/Event → Fire Protection Plan | 1 : 1 | One fire protection plan per submission |
-| Production/Event → Fire Performance | 1 : 0..1 | Optional; included when fire performers are part of the production |
 | Production/Event → Holding/Storage | 1 : many | One or more holding/storage areas |
 | Production/Event → Attachments | 1 : many | Multiple required documents |
 | Production/Event → Review/Coordination | 1 : 1 | One review record per submission |
@@ -79,14 +87,18 @@ SUBMISSION (Production/Event)
 | Fire Performance → Spotters | 1 : many | At least one spotter required |
 | Fire Performance → Fire Props | 1 : many | Multiple props per performance |
 
+**Note:** A submission must include at least one Flame Effect OR at least one Fire Performance. Both can be included.
+
 ## Reusability
 
 The following entities are designed to be **saved independently** and reused across multiple submissions:
 
-- **Flame Effect** (Entity 3) — an artist's saved effect can be included in multiple event submissions
+- **Flame Effect** (Entity 3) — apparatus-based effects with control systems (Chapter 9); an artist's saved effect can be included in multiple event submissions
+- **Fire Performance** (Entity 8) — performer-based effects with props/wicks (Chapter 14); a performer's saved routine can be included in multiple event submissions
 - **Personnel** (Entity 2) — operator profiles, assistant records
 - **Procedures** (Entity 5) — operating, emergency, maintenance procedures
-- **Fire Performance** (Entity 8) — performer records, prop specifications
+
+**Entity 3 and Entity 8 are peer-level core entities.** Both are reusable, and a submission can include either or both types.
 
 The following entities are **per-submission** and not typically reused:
 

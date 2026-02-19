@@ -1,6 +1,10 @@
 # Entity 8: Fire Performance (Chapter 14)
 
-Optional entity, included when the submission involves fire performers. Chapter 9 control system requirements do NOT apply to fire performers [9.1]; this entity contains the Chapter 14 requirements instead.
+A reusable entity for performer-based fire effects. Artists save one record per distinct fire performance routine. Multiple performances can be included in a single submission.
+
+**Peer entity:** Entity 3 (Flame Effect) covers apparatus-based effects with control systems. A submission can include fire performances, flame effects, or both.
+
+**Note:** Chapter 9 control system requirements do NOT apply to fire performances [9.1]. This entity contains the Chapter 14 requirements instead, which govern performers, props, spotters, and fueling procedures.
 
 ## 8.1 Performer Records
 

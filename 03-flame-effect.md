@@ -1,8 +1,10 @@
 # Entity 3: Individual Flame Effect
 
-This is the core reusable entity. Artists save one record per distinct flame effect device/appliance. Multiple effects combine into a single submission.
+A reusable entity for apparatus-based flame effects. Artists save one record per distinct flame effect device/appliance. Multiple effects can be included in a single submission.
 
-**Note:** Chapter 9 control system requirements do NOT apply to fire performer effects (Chapter 14). [9.1]
+**Peer entity:** Entity 8 (Fire Performance) covers performer-based effects with props/wicks. A submission can include flame effects, fire performances, or both.
+
+**Note:** Chapter 9 control system requirements apply to flame effects but do NOT apply to fire performances (Chapter 14). [9.1]
 
 ## 3.1 Effect Identity & Classification
 
@@ -114,6 +116,8 @@ Gel and solid fuels include gelled alcohol, colored flame gels and pastes, handh
 Per [9.1.4.2]: *"The flame effect plan submitted for approval to the AHJ shall indicate the means of providing for these requirements."*
 
 ### 3.4.1 General Control System Info
+
+**Note:** This section applies to flame effects only. Fire performances (Entity 8) do not use Chapter 9 control systems.
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|

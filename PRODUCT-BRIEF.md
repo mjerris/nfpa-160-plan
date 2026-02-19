@@ -30,13 +30,18 @@ NFPA 160 requires a comprehensive plan submission before flame effects can be us
 
 ### Reusability Model
 
-A key design goal is that artists **define things once and reuse them**. An artist who builds a propane poofer and documents it thoroughly should be able to include that same effect record in submissions for multiple events without re-entering data.
+A key design goal is that artists **define things once and reuse them**. An artist who builds a propane poofer and documents it thoroughly should be able to include that same effect record in submissions for multiple events without re-entering data. Similarly, a fire performer who documents their poi routine can reuse that record across events.
 
 **Reusable across submissions:**
-- Entity 3: Individual Flame Effect (the core reusable object — the system is architecturally centered on this)
+- Entity 3: Individual Flame Effect (apparatus-based effects with control systems — Chapter 9 applies)
+- Entity 8: Fire Performance (performer-based effects with props/wicks — Chapter 14 applies)
 - Entity 2: Personnel (operator profiles, assistant records)
 - Entity 5: Procedures (operating, emergency, maintenance — many are equipment-specific, not venue-specific)
-- Entity 8: Fire Performance (performer records, prop specifications, standard routines)
+
+**Entity 3 and Entity 8 are peer-level core entities.** A submission can include:
+- One or more flame effects only
+- One or more fire performances only
+- A mix of both flame effects and fire performances
 
 **Per-submission (event-specific):**
 - Entity 1: Production/Event
@@ -55,7 +60,7 @@ The output is a single assembled plan document that follows the structure define
 
 These decisions were made during the initial requirements extraction and should be carried forward:
 
-1. **Entity 3 (Flame Effect) is the architectural center of the system.** Everything else supports or contextualizes it. The questionnaire UX should reflect this — artists are primarily describing their fire effects, and the system wraps the compliance structure around them.
+1. **Entity 3 (Flame Effect) and Entity 8 (Fire Performance) are peer-level core entities.** The system supports two distinct types of fire art: apparatus-based flame effects (Chapter 9 control systems) and performer-based fire performance (Chapter 14 props/wicks). Users select which type(s) they're submitting at the start of their workflow. A submission can include one or both types. The questionnaire UX should reflect this branching — artists first identify whether they're describing flame effects, fire performances, or both.
 
 2. **Conditional form branching is driven by Appendix C.** The conditional logic map defines every show/hide condition for the questionnaire. When a user selects "Liquid" as their fuel type, only liquid fuel fields appear. When they check "Hybrid = Yes," the NFPA 1126 portion identification fields appear. This keeps the forms from being overwhelming.
 

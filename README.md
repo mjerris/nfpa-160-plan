@@ -6,9 +6,12 @@ A structured data model and requirements specification for building a questionna
 
 This specification defines every data point required by NFPA 160 to produce a submission-ready plan document for the Authority Having Jurisdiction (AHJ). It is organized as a set of **entities** (logical data objects) that map to forms in a questionnaire system where artists can:
 
-- Define and save individual flame effects with full fuel, appliance, and control system details
-- Save reusable components (procedures, personnel records, site diagrams)
+- Define and save **flame effects** (apparatus-based effects with control systems — Chapter 9)
+- Define and save **fire performances** (performer-based effects with props/wicks — Chapter 14)
+- Save reusable components (procedures, personnel records)
 - Combine saved entities to generate a complete plan document for AHJ submission
+
+A submission can include flame effects only, fire performances only, or a combination of both.
 
 ## Scope
 
