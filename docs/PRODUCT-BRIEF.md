@@ -50,10 +50,11 @@ A key design goal is that artists **define things once and reuse them**. An arti
 **Global shared data:**
 - Entity 9.1: SDS Library — Safety Data Sheets are stored once globally and shared across all users and submissions. The system pre-populates common SDS sheets; users can add more. Flame Effects and Fire Performances reference SDS records from this library.
 
-**Entity 3 and Entity 8 are peer-level core entities.** A submission can include:
-- One or more flame effects only
-- One or more fire performances only
-- A mix of both flame effects and fire performances
+**Entity 3 and Entity 8 are peer-level core entities.** Each submission is one type:
+- One or more flame effects (Chapter 9), OR
+- One or more fire performances (Chapter 14)
+
+Flame effects and fire performances cannot be mixed in a single submission. An artist who needs both must create separate submissions.
 
 **Per-submission (event-specific):**
 - Entity 1: Production/Event
@@ -71,7 +72,7 @@ The output is a single assembled plan document that follows the structure define
 
 These decisions were made during the initial requirements extraction and should be carried forward:
 
-1. **Entity 3 (Flame Effect) and Entity 8 (Fire Performance) are peer-level core entities.** The system supports two distinct types of fire art: apparatus-based flame effects (Chapter 9 control systems) and performer-based fire performance (Chapter 14 props/wicks). Users select which type(s) they're submitting at the start of their workflow. A submission can include one or both types. The questionnaire UX should reflect this branching — artists first identify whether they're describing flame effects, fire performances, or both.
+1. **Entity 3 (Flame Effect) and Entity 8 (Fire Performance) are peer-level core entities, but cannot be mixed in a single submission.** The system supports two distinct types of fire art: apparatus-based flame effects (Chapter 9 control systems) and performer-based fire performance (Chapter 14 props/wicks). Users select one submission type at the start of their workflow. This simplifies conditional logic — all Chapter 9 fields are hidden for fire performance submissions and vice versa. An artist who needs both types must create separate submissions.
 
 2. **Conditional form branching is driven by Appendix C.** The conditional logic map defines every show/hide condition for the questionnaire. When a user selects "Liquid" as their fuel type, only liquid fuel fields appear. When they check "Hybrid = Yes," the NFPA 1126 portion identification fields appear. This keeps the forms from being overwhelming.
 

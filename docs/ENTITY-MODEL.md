@@ -20,10 +20,10 @@ SUBMISSION (Production/Event)
 │       └── Standby Fire Safety Personnel
 │
 ├── ══════════════════════════════════════════════════════════
-│   CORE ENTITIES (at least one required per submission)
+│   SUBMISSION TYPE (one type per submission, not mixed)
 │   ══════════════════════════════════════════════════════════
 │
-├── FLAME EFFECTS (zero or more — apparatus-based, Chapter 9)
+├── FLAME EFFECTS (one or more — apparatus-based, Chapter 9)
 │   ├── Effect Identity & Classification
 │   ├── Fuel Specification ─────────────── references Global SDS Library
 │   │   ├── Gaseous Fuel Fields
@@ -41,7 +41,7 @@ SUBMISSION (Production/Event)
 │   ├── Post-Operation Securing
 │   └── Testing & Evaluation Records ──── test docs via Active Storage
 │
-├── FIRE PERFORMANCES (zero or more — performer-based, Chapter 14)
+├── OR: FIRE PERFORMANCES (one or more — performer-based, Chapter 14)
 │   ├── Performers ─────────────────────── linked via Role Assignments (Entity 2)
 │   ├── Safety Personnel (Spotters) ────── linked via Role Assignments (Entity 2)
 │   ├── Fire Props
@@ -77,8 +77,8 @@ SUBMISSION (Production/Event)
 
 | Entity | Cardinality | Relationship |
 |---|---|---|
-| Production/Event → Flame Effect | 1 : 0..many | Zero or more flame effects per submission |
-| Production/Event → Fire Performance | 1 : 0..many | Zero or more fire performances per submission |
+| Production/Event → Flame Effect | 1 : 1..many | One or more flame effects per submission (when submission type = Flame Effects) |
+| Production/Event → Fire Performance | 1 : 1..many | One or more fire performances per submission (when submission type = Fire Performances) |
 | Production/Event → Site Plan | 1 : 1..many | One or more site plans per submission; site plans are reusable |
 | Production/Event → Person (via role assignment) | 1 : many | Reusable person records assigned to roles; same person can have multiple roles |
 | Production/Event → Procedure (each type) | 1 : 0..many | Zero or more of each procedure sub-entity; each independently reusable |
@@ -96,7 +96,7 @@ SUBMISSION (Production/Event)
 | Fire Performance → Spotters | 1 : many | At least one; linked via Role Assignments (Entity 2) with Fire Performance FK |
 | Person → Competency Documents | 1 : 0..many | Stored on person via Active Storage |
 
-**Note:** A submission must include at least one Flame Effect OR at least one Fire Performance. Both can be included.
+**Note:** Each submission is one type: either flame effects (Chapter 9) or fire performances (Chapter 14). They cannot be mixed in a single submission. At least one effect or performance must be defined.
 
 ## Reusability
 
@@ -116,7 +116,7 @@ The following entities are designed to be **saved independently** and reused acr
   - Housekeeping
   - Protective Clothing
 
-**Entity 3 and Entity 8 are peer-level core entities.** Both are reusable, and a submission can include either or both types.
+**Entity 3 and Entity 8 are peer-level core entities.** Both are reusable. Each submission is one type — either flame effects or fire performances, not mixed.
 
 ## Global Shared Data
 

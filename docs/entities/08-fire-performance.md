@@ -2,7 +2,7 @@
 
 A reusable entity for performer-based fire effects. Artists save one record per distinct fire performance routine. Multiple performances can be included in a single submission.
 
-**Peer entity:** Entity 3 (Flame Effect) covers apparatus-based effects with control systems. A submission can include fire performances, flame effects, or both.
+**Peer entity:** Entity 3 (Flame Effect) covers apparatus-based effects with control systems. Each submission is one type — either flame effects or fire performances, not mixed.
 
 **Note:** Chapter 9 control system requirements do NOT apply to fire performances [9.1]. This entity contains the Chapter 14 requirements instead, which govern performers, props, spotters, and fueling procedures.
 

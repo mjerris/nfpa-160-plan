@@ -4,24 +4,52 @@ Rules the system should enforce before allowing document generation and before a
 
 ## Universal Validation
 
-Applies to every submission regardless of installation type or fuel.
+Applies to every submission regardless of submission type, installation type, or fuel.
 
 | Rule | Section |
 |---|---|
+| Submission type selected: Flame Effects or Fire Performances | — |
 | At least one flame effect operator named, age ≥21 | [5.3.2(8)], [8.4] |
-| At least one flame effect defined with classification | [5.3.2(4)] |
-| SDS referenced (from global library) for every distinct fuel across all effects and performances | [5.3.2(6)] |
+| SDS referenced (from global library) for every distinct fuel across all effects or performances | [5.3.2(6)] |
 | Site plan includes all mandatory elements from [5.3.2(5)] | [5.3.2(5)] |
-| Written operating instructions exist (start-up, show, shutdown, emergency) | [6.2.1] |
 | Holding area quantity ≤1 day unless AHJ approval documented | [4.2.1.1] |
-| Total fuel consumption across all effects and performances ≤ declared holding area capacity | [5.3.2(5)(h)] |
+| Total fuel consumption across all effects or performances ≤ declared holding area capacity | [5.3.2(5)(h)] |
 | All fuel quantities listed with estimated consumption | [5.3.2(5)(e)] |
 | Flame retardant documentation present for combustible construction materials | [5.3.2(7)] |
-| Post-show defueling procedure defined by flame effect operator | [7.7.3], [7.7.3.1] |
-| If hybrid: NFPA 160 and NFPA 1126 portions identified | [5.2.2.3] |
-| Plan submission format acceptable to AHJ | [5.3.1] |
 | Emergency response procedures included | [5.3.2(5)(j)] |
 | Means of egress shown on site plan | [5.3.2(5)(k)] |
+| Plan submission format acceptable to AHJ | [5.3.1] |
+
+## Flame Effect Submission Validation
+
+Applies when submission type = Flame Effects. These are Chapter 9 requirements.
+
+| Rule | Section |
+|---|---|
+| At least one flame effect defined with classification | [5.3.2(4)] |
+| Written operating instructions exist (start-up, show, shutdown, emergency) | [6.2.1] |
+| Post-show defueling procedure defined by flame effect operator | [7.7.3], [7.7.3.1] |
+| If hybrid: NFPA 160 and NFPA 1126 portions identified | [5.2.2.3] |
+
+## Fire Performance Submission Validation
+
+Applies when submission type = Fire Performances. These are Chapter 14 requirements.
+
+| Rule | Section |
+|---|---|
+| At least one fire performance defined | [Ch. 14] |
+| At least one cast member designated as flame effect operator (age ≥21, Chapter 8 compliant) | [14.1.1.3.1], [14.1.1.3.2] |
+| At least one spotter per performance/rehearsal | [14.2.1] |
+| Spotter carries safety towel | [14.2.1.6] |
+| Spotter has extinguisher access | [14.2.1.7] |
+| Routine rehearsed in costume with fire before audience | [14.1.2.1] |
+| Fueling area ≥25 ft from audience | [14.4.2.4.3] |
+| Fueling area ≥25 ft from ignition sources | [14.4.2.4.4] |
+| Performance area free of flammable materials or treated/tested | [14.5.2] |
+| Props cooled before fueling | [14.3.5.3] |
+| Props cooled before storage/transport post-performance | [14.6.2] |
+| Fuel residue removed immediately after performance | [14.3.5.2.1] |
+| Fuel-soaked waste disposal plan | [14.3.5.2.2] |
 
 ## Temporary Installation Validation
 
@@ -45,6 +73,8 @@ Applies to every submission regardless of installation type or fuel.
 | Fire/life safety interruption only during initial acceptance | [5.5.2] |
 
 ## Fuel-Type-Specific Validation
+
+Applies to flame effect submissions based on fuel type selection.
 
 ### Gaseous Fuel
 
@@ -81,20 +111,3 @@ Applies to every submission regardless of installation type or fuel.
 |---|---|
 | Surface/holder is noncombustible, prevents fuel migration | [13.1.1] |
 | Extinguishment means described | [13.1.2] |
-
-## Fire Performance Validation
-
-| Rule | Section |
-|---|---|
-| At least one cast member designated as flame effect operator (age ≥21, Chapter 8 compliant) | [14.1.1.3.1], [14.1.1.3.2] |
-| At least one spotter per performance/rehearsal | [14.2.1] |
-| Spotter carries safety towel | [14.2.1.6] |
-| Spotter has extinguisher access | [14.2.1.7] |
-| Routine rehearsed in costume with fire before audience | [14.1.2.1] |
-| Fueling area ≥25 ft from audience | [14.4.2.4.3] |
-| Fueling area ≥25 ft from ignition sources | [14.4.2.4.4] |
-| Performance area free of flammable materials or treated/tested | [14.5.2] |
-| Props cooled before fueling | [14.3.5.3] |
-| Props cooled before storage/transport post-performance | [14.6.2] |
-| Fuel residue removed immediately after performance | [14.3.5.2.1] |
-| Fuel-soaked waste disposal plan | [14.3.5.2.2] |

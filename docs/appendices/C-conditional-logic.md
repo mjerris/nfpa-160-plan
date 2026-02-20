@@ -2,16 +2,16 @@
 
 Summary of form branching conditions for the questionnaire system. Use this to implement show/hide logic on form fields.
 
-## Primary Entity Type Selection
+## Submission Type Selection
 
-At the start of a submission, users select which types of fire art they are including. This is the top-level branch that determines which entity workflows are shown.
+At the start of a submission, users select one submission type. This is the top-level branch that determines which entity workflows, validation rules, and procedures apply.
 
-| Condition | Shows Entity/Workflow | Section |
-|---|---|---|
-| Includes Flame Effects = Yes | Entity 3 workflow (apparatus-based effects, Chapter 9 control systems) | [Ch. 9] |
-| Includes Fire Performances = Yes | Entity 8 workflow (performer-based effects, Chapter 14 props/wicks) | [Ch. 14] |
+| Condition | Shows Entity/Workflow | Hides | Section |
+|---|---|---|---|
+| Submission Type = Flame Effects | Entity 3 workflow (apparatus-based effects, Chapter 9 control systems), Chapter 9 procedures | All Entity 8 / Chapter 14 fields | [Ch. 9] |
+| Submission Type = Fire Performances | Entity 8 workflow (performer-based effects, Chapter 14 props/wicks), Chapter 14 procedures | All Entity 3 / Chapter 9 fields | [Ch. 14] |
 
-A submission must include at least one flame effect OR one fire performance. Both can be included in the same submission.
+A submission must be one type: either flame effects or fire performances. They cannot be mixed in a single submission. At least one effect or performance must be defined.
 
 ## Installation Type Conditions
 

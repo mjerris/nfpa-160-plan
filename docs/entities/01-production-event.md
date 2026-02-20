@@ -38,7 +38,20 @@ One record per submission. Describes the overall production context.
 | Indoor or outdoor | Recommended | [B.1.1.1], [B.1.1.2] | Drives conditional requirements (ventilation, weather, etc.) |
 | Venue description (property, facility, building, or room) | Recommended | [3.3.34], [A.3.3.34] | Per definition — specify exact area where effects are permitted. Some venue configurations may be safe for effects while others are not. |
 
-## 1.4 Installation Classification
+## 1.4 Submission Type
+
+| Field | Required | Guidance |
+|---|---|---|
+| Submission type | Yes | Select one: Flame Effects or Fire Performances |
+
+| Type | Applies | Description |
+|---|---|---|
+| Flame Effects | Chapter 9 | Apparatus-based effects with control systems (Entity 3) |
+| Fire Performances | Chapter 14 | Performer-based effects with props/wicks (Entity 8) |
+
+A submission cannot mix flame effects and fire performances. An artist who needs both must create separate submissions. This selection determines which entity workflows, validation rules, and conditional fields are shown.
+
+## 1.5 Installation Classification
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|
@@ -51,7 +64,7 @@ One record per submission. Describes the overall production context.
 
 System should auto-calculate classification based on permit dates and flag if it crosses the 180-day threshold. [A.5.1.2]
 
-## 1.5 Submission Status & Review Workflow
+## 1.6 Submission Status & Review Workflow
 
 ### Status
 
