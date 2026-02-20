@@ -50,6 +50,7 @@ Applies when submission type = Fire Performances. These are Chapter 14 requireme
 | Props cooled before storage/transport post-performance | [14.6.2] |
 | Fuel residue removed immediately after performance | [14.3.5.2.1] |
 | Fuel-soaked waste disposal plan | [14.3.5.2.2] |
+| Post-performance defueling procedure defined by flame effect operator | [7.7.3], [7.7.3.1] |
 
 ## Temporary Installation Validation
 
