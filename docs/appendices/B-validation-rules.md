@@ -39,7 +39,7 @@ Applies when submission type = Fire Performances. These are Chapter 14 requireme
 |---|---|
 | At least one fire performance defined | [Ch. 14] |
 | At least one cast member designated as flame effect operator (age ≥21, Chapter 8 compliant) | [14.1.1.3.1], [14.1.1.3.2] |
-| At least one spotter per performance/rehearsal | [14.2.1] |
+| Each fire performance has at least one spotter assigned to it via role assignment FK | [14.2.1] |
 | Spotter carries safety towel | [14.2.1.6] |
 | Spotter has extinguisher access | [14.2.1.7] |
 | Routine rehearsed in costume with fire before audience | [14.1.2.1] |
