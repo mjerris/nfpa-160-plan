@@ -150,6 +150,13 @@ Items not yet resolved that should be addressed as the project progresses:
 - **Attachment management:** SDS sheets stored in a global shared library; other attachments stored on their parent entities via Active Storage (see Entity 9).
 - **NFPA 1126 integration:** Out of scope for this project. The system flags hybrid effects and requires identification of NFPA 160 vs NFPA 1126 portions (Entity 3, Section 3.1), but does not model NFPA 1126 requirements.
 
+## Future Enhancements
+
+Items identified during data model review that are out of scope for the initial build:
+
+- **Inspection and test record entities:** Currently, test records for flame effects are stored as attachments via Active Storage on Entity 3. A future enhancement could introduce structured inspection/test record entities with fields for test type, date, result, and inspector — enabling validation of testing schedules and expiration tracking.
+- **Deviation and variance tracking:** The system does not currently model deviations from approved plans or variance requests. A future enhancement could allow artists to document and track AHJ-approved deviations from standard requirements, with an audit trail of what was requested and approved.
+
 ## Related Standards
 
 These standards are referenced by NFPA 160 and may be relevant to future scope expansion:
