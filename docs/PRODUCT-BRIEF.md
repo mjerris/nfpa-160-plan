@@ -139,12 +139,16 @@ The full text of the standard is required for cross-referencing during developme
 
 Items not yet resolved that should be addressed as the project progresses:
 
-- **Output format:** What document format(s) should the system generate? PDF is most universally accepted by AHJs, but DOCX allows post-generation editing.
 - **Multi-artist event submissions:** How should the system handle events where multiple artists each submit their own effects but share a common site plan and event record? Is the event organizer a distinct user role?
 - **AHJ-specific customizations:** Different jurisdictions may have additional requirements beyond NFPA 160. Should the system support AHJ-specific field extensions or addenda?
 - **Versioning of saved effects:** When an artist modifies a saved flame effect, should previous submissions that referenced the old version retain the original data, or update?
-- **NFPA 1126 integration:** Hybrid flame effects require compliance with both NFPA 160 and NFPA 1126. Should this system also model NFPA 1126 requirements, or just flag that the user needs a separate 1126 submission?
 - **Template library:** Should the system provide starter templates for common effect types (propane poofer, liquid fuel mortar, gel torch, etc.) to accelerate onboarding?
+
+## Resolved Questions
+
+- **Output format:** PDF, generated via Prawn (see Technology Stack).
+- **Attachment management:** SDS sheets stored in a global shared library; other attachments stored on their parent entities via Active Storage (see Entity 9).
+- **NFPA 1126 integration:** Out of scope for this project. The system flags hybrid effects and requires identification of NFPA 160 vs NFPA 1126 portions (Entity 3, Section 3.1), but does not model NFPA 1126 requirements.
 
 ## Related Standards
 
