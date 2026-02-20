@@ -66,7 +66,7 @@ Flame effects and fire performances cannot be mixed in a single submission. An a
 
 ### Document Generation
 
-The output is a single assembled plan document that follows the structure defined in [appendices/A-document-generation.md](appendices/A-document-generation.md). The format should be acceptable to AHJs — likely PDF, though the system could also support DOCX or print-formatted HTML. The assembled document must include or reference all attachments (SDS sheets, drawings, test documentation).
+The output is a single assembled PDF document that follows the structure defined in [appendices/A-document-generation.md](appendices/A-document-generation.md), generated via Prawn. The assembled document must include or reference all attachments (SDS sheets, drawings, test documentation).
 
 ## Key Design Decisions
 
