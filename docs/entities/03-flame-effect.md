@@ -46,7 +46,9 @@ A reusable entity for apparatus-based flame effects. Artists save one record per
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|
+| Gas piping compliance: conforms to applicable gas codes | Yes | [10.1.1] | NFPA 54 for natural gas, NFPA 58 for LP-Gas, or equivalent |
 | Minimum tank size and basis for sizing (surface area for fuel delivery rate) | Yes | [10.1.2] | Minimum determined by surface area required to prevent reduced delivery during effect |
+| Purge cycle description: purge before each ignition attempt, duration per manufacturer specification or as acceptable to AHJ | Yes | [10.1.3] | Required for gaseous fuel systems |
 | If LPG: confirmation that container is positioned with relief valve in communication with vapor space | Conditional | [9.2.2.3] | Required for LPG. See [A.9.2.2.3] — liquid relief creates significantly greater hazard |
 
 ### 3.2.2 Liquid Fuel Additional Fields (Chapter 12)
