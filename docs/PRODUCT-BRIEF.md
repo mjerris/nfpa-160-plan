@@ -116,6 +116,10 @@ The full text of the standard is required for cross-referencing during developme
 | **Hosting** | Google Cloud Run | Containerized, scales to zero, no infrastructure management |
 | **Authentication** | Google Account (OmniAuth) | Single sign-on via Google; no password management |
 | **Authorization** | Lightweight controller scoping | Users see only their own records; inspectors get read-only access to submitted plans |
+| **PDF Generation** | Prawn | Ruby-native PDF generation; full programmatic control over document layout |
+| **UI Components** | Phlex | Pure-Ruby HTML rendering; reusable components across 11 entity form types |
+| **Form Builder** | Simple Form | Declarative form DSL with Tailwind integration; simplifies 20+ conditional form branches |
+| **Testing** | Minitest | Rails default; simple, fast, ships with Rails 8 |
 
 ### User Roles
 
@@ -124,14 +128,6 @@ The full text of the standard is required for cross-referencing during developme
 | **Artist / Operator** | Create and manage their own plans, effects, personnel, procedures |
 | **Inspector** | Read-only access to submitted plans (assigned by jurisdiction/AHJ) |
 
-### Open Framework Decisions
-
-These should be resolved before or during early development:
-
-- **Document generation approach:** How to render the final plan document. Options include Prawn (Ruby-native PDF), Grover/Ferrum (HTML-to-PDF via headless Chrome, reuses views/Tailwind), Typst (modern typesetting engine), or LaTeX. Choice affects template design strategy.
-- **CSS component approach:** Whether to use ViewComponent (GitHub's gem), Phlex (pure-Ruby HTML rendering), or plain Rails partials for reusable UI components across 11 entity form types.
-- **Form builder:** Whether to use Simple Form (declarative DSL, good Tailwind integration), or build on the default Rails form builder. The app has 20+ conditional branching rules (Appendix C) that will benefit from a consistent form abstraction.
-- **Testing framework:** Minitest (Rails default, simple, fast) vs RSpec (more expressive, larger ecosystem).
 
 ## Open Questions
 
