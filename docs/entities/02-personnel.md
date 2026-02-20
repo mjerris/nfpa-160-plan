@@ -10,7 +10,7 @@ Each person is saved once with their core information:
 |---|---|---|---|
 | Name | Yes | [5.3.2(8)] | |
 | Date of birth / age confirmation | Yes | [8.4] | Used to verify age requirements for specific roles |
-| Competency documents (uploaded files: certificates, licenses, training records) | Conditional | [8.1.2] | Required if person will be assigned as flame effect operator; stored via Active Storage |
+| Competency evidence: uploaded documents (certificates, licenses, training records) OR self-attestation of competency through experience and training | Conditional | [8.1.2] | Required if person will be assigned as flame effect operator; stored via Active Storage |
 | Substance abuse acknowledgment signed (date tracked) | Conditional | [8.3] | Required if person will be assigned as flame effect operator or performer |
 
 ## 2.2 Role Assignment Record (Per Submission)
@@ -44,7 +44,7 @@ These rules are checked at document generation time by validating the Person Rec
 | Validation | Section | Source |
 |---|---|---|
 | Age ≥ 21 years (from Person Record date of birth) | [8.4] | Person Record |
-| At least one competency document on file | [8.1.2] | Person Record |
+| Competency evidence on file: at least one uploaded document OR signed self-attestation | [8.1.2] | Person Record |
 | Substance abuse acknowledgment signed | [8.3] | Person Record |
 
 **Flame Effect Operator Responsibilities Note (for system guidance text):**

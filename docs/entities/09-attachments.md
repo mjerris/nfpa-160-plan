@@ -42,7 +42,7 @@ Attachments are stored directly on their parent entity via Active Storage. They 
 
 | Attachment | Required | Section | Notes |
 |---|---|---|---|
-| Competency documents (certificates, licenses, training records) | Conditional | [8.1.2] | Required for operators; OR a declaration of competency |
+| Competency evidence: uploaded documents (certificates, licenses, training records) OR signed self-attestation of competency through experience and training | Conditional | [8.1.2] | Required for operators |
 
 ### Site Plan (Entity 4)
 
