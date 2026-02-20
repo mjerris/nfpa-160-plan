@@ -75,11 +75,13 @@ These decisions were made during the initial requirements extraction and should 
 
 2. **Conditional form branching is driven by Appendix C.** The conditional logic map defines every show/hide condition for the questionnaire. When a user selects "Liquid" as their fuel type, only liquid fuel fields appear. When they check "Hybrid = Yes," the NFPA 1126 portion identification fields appear. This keeps the forms from being overwhelming.
 
-3. **Validation runs at document generation time** (Appendix B), not during data entry. Artists should be able to save partial records and come back to them. Validation is a pre-generation gate, not an input-time blocker. Consider also offering a "check completeness" action that runs validation without generating the document.
+3. **Validation runs at submission and document generation time** (Appendix B), not during data entry. Artists should be able to save partial records and come back to them. Validation is enforced when an artist submits for review (Draft → Submitted) and again at document generation. A "check completeness" action is also available at any time.
 
-4. **Annex material is included as guidance, not requirements.** The spec distinguishes between mandatory (`[5.3.2]`) and informational (`[A.5.3]`) references. In the UI, annex material should appear as help text, tooltips, or expandable guidance sections — not as required fields. However, annex-recommended items (like the fire hazards evaluation checklist in A.16.2.1) are practically expected by most AHJs.
+4. **AHJ approval is handled through the submission review workflow.** Fields throughout the entities that reference "approved by AHJ" or "acceptable to AHJ" are satisfied through the inspector review process (Entity 1.5), not through a separate per-item approval entity. Inspectors review the complete plan holistically and can request changes via the review history. The one exception is fire/life safety system interruption (Section 5.5), which requires documented three-party sign-off and is captured as conditional fields in Entity 6.
 
-5. **The inspection schedule (Entity 11) is informational.** Annex C is non-mandatory. It's included because most AHJs expect to see an inspection plan, and providing a pre-built schedule template based on installation type is a significant value-add for the user.
+5. **Annex material is included as guidance, not requirements.** The spec distinguishes between mandatory (`[5.3.2]`) and informational (`[A.5.3]`) references. In the UI, annex material should appear as help text, tooltips, or expandable guidance sections — not as required fields. However, annex-recommended items (like the fire hazards evaluation checklist in A.16.2.1) are practically expected by most AHJs.
+
+6. **The inspection schedule (Entity 11) is informational.** Annex C is non-mandatory. It's included because most AHJs expect to see an inspection plan, and providing a pre-built schedule template based on installation type is a significant value-add for the user.
 
 ## NFPA 160 (2026 Edition) — Notable Changes
 
