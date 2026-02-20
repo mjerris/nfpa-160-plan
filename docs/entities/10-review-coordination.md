@@ -9,6 +9,8 @@
 | Plan reviewed with building owner/representative | Yes | [5.3.4] | |
 | Purpose: ensure coordinated response in event of emergency | Yes | [5.3.4] | |
 
+**Note:** No flame effect shall be used before an audience until the plan has been approved by the AHJ. [5.2.1]
+
 ## 10.2 Flame Effect Demonstration
 
 | Field | Required | Section | Guidance |
