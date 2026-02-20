@@ -10,64 +10,68 @@ Each person is saved once with their core information:
 |---|---|---|---|
 | Name | Yes | [5.3.2(8)] | |
 | Date of birth / age confirmation | Yes | [8.4] | Used to verify age requirements for specific roles |
-| Competency documentation (experience/training OR license acceptable to AHJ) | Conditional | [8.1.2] | Required if person will be assigned as operator |
-| Substance abuse acknowledgment | Conditional | [8.3] | Required if person will be assigned as operator or performer |
+| Competency documents (uploaded files: certificates, licenses, training records) | Conditional | [8.1.2] | Required if person will be assigned as operator; stored via Active Storage |
+| Substance abuse acknowledgment signed (date tracked) | Conditional | [8.3] | Required if person will be assigned as operator or performer |
 
-## 2.2 Role Assignments (Per Submission)
+## 2.2 Role Assignment Record (Per Submission)
 
-Within each submission, saved persons are assigned to one or more roles:
+Each role assignment is a join record linking a saved person to a role within a specific submission. One person can have multiple role assignments in the same submission (e.g., operator and spotter).
 
-| Role | Requirements | Section |
+| Field | Required | Notes |
 |---|---|---|
-| Flame Effect Operator | Age ≥21, competency documentation, substance acknowledgment, familiarity with effects | [8.1], [8.4] |
-| Assistant | Works under operator supervision; may be under 21 | [3.3.4], [A.8.4] |
-| Spotter (Fire Performance) | Training in flame extinguishing, reaction time, equipment control, audience control | [14.2.1.3] |
-| Standby Fire Safety Personnel | Working knowledge of supplemental equipment, means of communication | [16.4] |
+| Person (FK → Person Record) | Yes | Which saved person is being assigned |
+| Submission (FK → Entity 1) | Yes | Which submission this assignment belongs to |
+| Role | Yes | One of: Flame Effect Operator, Assistant, Spotter, Standby Fire Safety Personnel |
+| Fire Performance (FK → Entity 8) | Conditional | Required for Spotter role; identifies which performance they are assigned to |
 
 **Note:** At least one person must be assigned as Flame Effect Operator per submission.
 
-## 2.3 Role-Specific Requirements
+### Assignment UI Confirmations
+
+When assigning a person to a role, the UI presents role-specific confirmations that must be acknowledged before the assignment is saved. These are acceptance gates in the assignment flow, not stored data fields:
+
+- **Flame Effect Operator:** Confirm familiarity with this submission's effects
+- **Assistant:** Confirm this person will work under operator supervision
+- **Spotter:** Confirm training in flame extinguishing, reaction time, equipment control, and audience control
+- **Standby Fire Safety Personnel:** Confirm working knowledge of supplemental equipment
+
+## 2.3 Role-Specific Validation Rules
+
+These rules are checked at document generation time by validating the Person Record against the assigned role.
 
 ### Flame Effect Operator
 
-When a person is assigned as operator, the system validates:
-
-| Field | Required | Section | Guidance |
-|---|---|---|---|
-| Age confirmation: ≥21 years | Yes | [8.4] | All operators must be at least 21 |
-| Demonstration of competency: experience/training OR license acceptable to AHJ | Yes | [8.1.2] | |
-| Familiarity with operating manual/instructions for all effects in this submission | Yes | [8.1.1] | Per-submission confirmation |
-| Substance abuse acknowledgment | Yes | [8.3] | Includes intoxicating beverages, narcotics/controlled substances, and impairing prescription/nonprescription drugs |
+| Validation | Section | Source |
+|---|---|---|
+| Age ≥ 21 years (from Person Record date of birth) | [8.4] | Person Record |
+| At least one competency document on file | [8.1.2] | Person Record |
+| Substance abuse acknowledgment signed | [8.3] | Person Record |
 
 **Operator Responsibilities Note (for system guidance text):**
 The operator is responsible for storage, setup, operations, teardown of all flame effect materials, devices, equipment, systems, and supervision of assistants. [8.2]
 
 ### Assistant
 
-| Field | Required | Section | Guidance |
-|---|---|---|---|
-| Age | Informational | [A.8.4] | Assistants may be under 21 |
-| Supervised by operator | Yes | [3.3.4] | Persons working under supervision of operator |
+| Validation | Section | Source |
+|---|---|---|
+| At least one Flame Effect Operator also assigned in same submission | [3.3.4] | Role Assignment |
+
+Assistants may be under 21. [A.8.4]
 
 ### Spotter (Fire Performance)
 
 Required when fire performance (Entity 8) is included. See [08-fire-performance.md](08-fire-performance.md), Section 8.3 for full spotter requirements.
 
-| Field | Required | Section | Guidance |
-|---|---|---|---|
-| Training in flame extinguishing | Yes | [14.2.1.3] | |
-| Training in reaction time (to fires and hazards) | Yes | [14.2.1.3], [A.14.2.1.3] | |
-| Training in equipment control | Yes | [14.2.1.3] | |
-| Training in audience control | Yes | [14.2.1.3] | |
-| Clothing compliant with Section 7.10 | Yes | [14.2.1.5] | |
+| Validation | Section | Source |
+|---|---|---|
+| Assigned to a specific fire performance in this submission | [14.2.1.3] | Role Assignment |
 
 ### Standby Fire Safety Personnel
 
-| Field | Required | Section | Guidance |
-|---|---|---|---|
-| Required by fire hazards evaluation or AHJ? | Conditional | [16.4.1] | If yes, following fields are required |
-| Working knowledge of supplemental equipment | Conditional | [16.4.2] | |
-| Means of communication or alarm transmission during operations | Conditional | [16.4.3] | |
+| Validation | Section | Source |
+|---|---|---|
+| Required if fire hazards evaluation or AHJ requires it | [16.4.1] | Submission context |
+| Communication methods documented in operating procedures (Entity 5.1) and emergency response procedures (Entity 5.5) | [16.4.3] | Entity 5 |
 
 ## 2.4 Support Personnel Awareness
 

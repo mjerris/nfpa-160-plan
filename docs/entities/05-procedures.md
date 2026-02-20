@@ -22,6 +22,7 @@ Each procedure sub-entity below is **independently reusable** across submissions
 | Written emergency shutdown procedures | Yes | [6.2.1] | |
 | Operating instructions available to operator | Yes | [6.2.2] | |
 | Operating instructions available to AHJ | Yes | [5.3.3] | |
+| Means of communication between personnel during operations | Yes | [16.4.3] | Radio, hand signals, verbal, etc. |
 
 ## 5.2 Rehearsal / Pre-Show Procedures
 
@@ -57,6 +58,7 @@ Each procedure sub-entity below is **independently reusable** across submissions
 | Emergency operations plan (in accordance with AHJ-approved plan) | Yes | [7.9] | |
 | Coordination with AHJ, operator, and building owner/representative prior to production | Yes | [5.3.4] | Ensures coordinated emergency response |
 | Information on non-standard hazards provided to emergency responders upon request | Recommended | [A.5.3] | Hazards not commonly covered in emergency responder training |
+| Means of alarm transmission during emergency operations | Yes | [16.4.3] | How personnel signal an emergency (radio, alarm pull, verbal, etc.) |
 
 ## 5.6 Maintenance Procedures
 
