@@ -81,3 +81,5 @@ This applies to all personnel assigned to any role:
 |---|---|---|---|
 | Plan for advising all performers and support personnel of hazardous exposure | Yes | [7.5.1] | Must be advised they are exposed to a potentially hazardous situation |
 | Confirmation that performers/support personnel participate voluntarily and in performance of duties | Yes | [7.5.2] | Only those familiar and experienced with the effects |
+
+**Note:** The procedure for delivering this advisement is defined in Entity 5.2 (Rehearsal / Pre-Show Procedures).
