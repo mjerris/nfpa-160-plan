@@ -15,7 +15,6 @@ Applies to every submission regardless of submission type, installation type, or
 | Holding area quantity ≤1 day unless AHJ approval documented | [4.2.1.1] |
 | Sum of estimated fuel consumption (Entity 3, §3.2 or Entity 8, §8.5) across all effects or performances ≤ sum of maximum quantity across all holding/storage areas (Entity 7) | [5.3.2(5)(h)] |
 | All fuel quantities listed with estimated consumption | [5.3.2(5)(e)] |
-| Flame retardant documentation present for combustible construction materials | [5.3.2(7)] |
 | Emergency response procedures included | [5.3.2(5)(j)] |
 | Means of egress shown on site plan | [5.3.2(5)(k)] |
 | Plan submission format acceptable to AHJ | [5.3.1] |
@@ -29,6 +28,7 @@ Applies when submission type = Flame Effects. These are Chapter 9 requirements.
 | At least one flame effect defined with classification | [5.3.2(4)] |
 | Written operating instructions exist (start-up, show, shutdown, emergency) | [6.2.1] |
 | Post-show defueling procedure defined by flame effect operator | [7.7.3], [7.7.3.1] |
+| Flame retardant documentation present for combustible construction materials | [5.3.2(7)] |
 | If hybrid: NFPA 160 and NFPA 1126 portions identified | [5.2.2.3] |
 
 ## Fire Performance Submission Validation
