@@ -39,7 +39,7 @@ A reusable entity for apparatus-based flame effects. Artists save one record per
 | Primary fuel type | Yes | [3.3.16] | Select: Gaseous, Liquid, Prepackaged Single-Use, Gel, or Solid |
 | Specific fuel name / product | Yes | [5.3.2(5)(e)] | |
 | Estimated fuel consumption (quantity + time period) | Yes | [5.3.2(5)(e)] | |
-| Safety Data Sheet (SDS) — current | Yes | [5.3.2(6)] | Must be attached/uploaded per fuel |
+| Safety Data Sheet (SDS) — current | Yes | [5.3.2(6)] | Reference from global SDS library (Entity 9.1); one per distinct fuel |
 
 ### 3.2.1 Gaseous Fuel Additional Fields (Chapter 10)
 
@@ -101,7 +101,7 @@ Gel and solid fuels include gelled alcohol, colored flame gels and pastes, handh
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|
-| Drawings, manuals, or written descriptions of the device | Yes | [6.1.1] | Must describe type of item |
+| Drawings, manuals, or written descriptions of the device | Yes | [6.1.1] | Stored on effect record via Active Storage; must describe type of item |
 | Performance specifications of the flame effect produced | Yes | [6.1.1] | |
 | Flame effect burner description (size and configuration of flames) | Recommended | [3.3.15] | |
 | Min/max ambient temperature rating (if critical to operation) | Conditional | [7.6.1.1] | Manufacturer must specify if critical. Fuels may not properly ignite outside specified ranges [A.7.6.1.1] |
@@ -291,7 +291,7 @@ The plan must specify one of two approaches [9.2.1.1]:
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|
-| Documentation that effect was tested to verify operation per design | Yes | [7.1.1], [15.1.1] | |
+| Documentation that effect was tested to verify operation per design | Yes | [7.1.1], [15.1.1] | Stored on effect record via Active Storage |
 | Documentation that effect was evaluated: no hazardous exposure to spectators, performers, support personnel, or operator | Yes | [7.1.2] | Skin surface temp should not exceed 111°F (44°C) as measured by IR thermometer [A.7.1.2] |
 | Testing documentation from manufacturer or fabricator | Yes | [15.1.2] | |
 | Inspection interval acceptable to AHJ | Yes | [7.1.3] | Effects must be inspected and retested on AHJ-acceptable interval |

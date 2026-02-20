@@ -90,7 +90,7 @@ Performers are linked to a fire performance through Role Assignment records in E
 | Fuel containers and dip buckets sealed when not in use | Yes | [14.4.2.3] | |
 | Fire props cooled to ambient temperature before fueling | Yes | [14.3.5.3] | |
 | Excess fuel removed and stored per NFPA 1 or NFPA 30 | Yes | [14.3.5.2] | |
-| Safety Data Sheets (SDS) available for all fuels and hazardous chemicals | Yes | [14.4] | |
+| Safety Data Sheets (SDS) available for all fuels and hazardous chemicals | Yes | [14.4] | Reference from global SDS library (Entity 9.1); one per distinct fuel |
 | Fuel stored per NFPA 1 or NFPA 30 | Yes | [14.4.1] | |
 
 ## 8.6 Performance Plan

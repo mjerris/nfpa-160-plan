@@ -1,6 +1,8 @@
 # Entity 4: Site Plan
 
-One per submission. This is a diagram/drawing with associated data. Per [5.3.2(5)], the plan shall include a site plan showing the following elements.
+A **reusable** entity. Artists who perform at the same venue repeatedly can reuse a saved site plan across submissions. Each submission references one or more site plans. This is a diagram/drawing with associated data. Per [5.3.2(5)], the plan shall include a site plan showing the following elements.
+
+Site plan diagrams are stored on the site plan record via Active Storage.
 
 ## 4.1 Required Site Plan Elements (All Installations)
 

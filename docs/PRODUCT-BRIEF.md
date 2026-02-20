@@ -33,9 +33,10 @@ NFPA 160 requires a comprehensive plan submission before flame effects can be us
 A key design goal is that artists **define things once and reuse them**. An artist who builds a propane poofer and documents it thoroughly should be able to include that same effect record in submissions for multiple events without re-entering data. Similarly, a fire performer who documents their poi routine can reuse that record across events.
 
 **Reusable across submissions:**
-- Entity 3: Individual Flame Effect (apparatus-based effects with control systems — Chapter 9 applies)
+- Entity 3: Individual Flame Effect (apparatus-based effects with control systems — Chapter 9 applies). Design drawings and test records are stored on the effect and travel with it.
 - Entity 8: Fire Performance (performer-based effects with props/wicks — Chapter 14 applies)
-- Entity 2: Personnel — person records are saved once and assigned to roles per submission; the same person can hold multiple roles (e.g., operator + spotter)
+- Entity 2: Personnel — person records are saved once and assigned to roles per submission via Role Assignment records; the same person can hold multiple roles (e.g., operator + spotter). Competency documents are stored on the person record.
+- Entity 4: Site Plan — reusable for the same venue across submissions; diagrams stored via Active Storage
 - Entity 5: Procedures — each sub-entity is independently reusable:
   - Operating Procedures
   - Rehearsal / Pre-Show Procedures
@@ -46,6 +47,9 @@ A key design goal is that artists **define things once and reuse them**. An arti
   - Housekeeping
   - Protective Clothing
 
+**Global shared data:**
+- Entity 9.1: SDS Library — Safety Data Sheets are stored once globally and shared across all users and submissions. The system pre-populates common SDS sheets; users can add more. Flame Effects and Fire Performances reference SDS records from this library.
+
 **Entity 3 and Entity 8 are peer-level core entities.** A submission can include:
 - One or more flame effects only
 - One or more fire performances only
@@ -53,10 +57,9 @@ A key design goal is that artists **define things once and reuse them**. An arti
 
 **Per-submission (event-specific):**
 - Entity 1: Production/Event
-- Entity 4: Site Plan
 - Entity 6: Fire Protection Plan — except Fire Extinguisher Plan (§6.2), which is reusable
 - Entity 7: Holding/Storage Areas
-- Entity 9: Attachments (some may be reusable, like SDS sheets, but the index is per-submission)
+- Entity 9: Attachment Requirements — defines what attachments are required per entity; attachments are stored on their parent entities via Active Storage
 - Entity 10: Review & Coordination
 - Entity 11: Inspection Schedule
 
@@ -136,7 +139,6 @@ Items not yet resolved that should be addressed as the project progresses:
 - **Output format:** What document format(s) should the system generate? PDF is most universally accepted by AHJs, but DOCX allows post-generation editing.
 - **Multi-artist event submissions:** How should the system handle events where multiple artists each submit their own effects but share a common site plan and event record? Is the event organizer a distinct user role?
 - **AHJ-specific customizations:** Different jurisdictions may have additional requirements beyond NFPA 160. Should the system support AHJ-specific field extensions or addenda?
-- **Attachment management:** Should SDS sheets and device drawings be stored centrally and linked to effects (enabling reuse), or uploaded per-submission?
 - **Versioning of saved effects:** When an artist modifies a saved flame effect, should previous submissions that referenced the old version retain the original data, or update?
 - **NFPA 1126 integration:** Hybrid flame effects require compliance with both NFPA 160 and NFPA 1126. Should this system also model NFPA 1126 requirements, or just flag that the user needs a separate 1126 submission?
 - **Template library:** Should the system provide starter templates for common effect types (propane poofer, liquid fuel mortar, gel torch, etc.) to accelerate onboarding?

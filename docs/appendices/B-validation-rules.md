@@ -10,7 +10,7 @@ Applies to every submission regardless of installation type or fuel.
 |---|---|
 | At least one flame effect operator named, age ≥21 | [5.3.2(8)], [8.4] |
 | At least one flame effect defined with classification | [5.3.2(4)] |
-| SDS attached for every distinct fuel referenced across all effects | [5.3.2(6)] |
+| SDS referenced (from global library) for every distinct fuel across all effects and performances | [5.3.2(6)] |
 | Site plan includes all mandatory elements from [5.3.2(5)] | [5.3.2(5)] |
 | Written operating instructions exist (start-up, show, shutdown, emergency) | [6.2.1] |
 | Holding area quantity ≤1 day unless AHJ approval documented | [4.2.1.1] |
