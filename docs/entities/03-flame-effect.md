@@ -168,7 +168,6 @@ The plan must specify one of two approaches [9.2.1.1]:
 |---|---|---|---|
 | Description of how fuel supply is available only during operation | Yes | [9.2.2.1] | |
 | Quantity limitation: fuel supplied limited to amount necessary for operation | Yes | [9.2.2.2] | |
-| If LPG: confirmation container positioned with relief valve in communication with vapor space | Conditional | [9.2.2.3] | |
 
 **If fuel is delivered through a central distribution system [9.2.2.4.1]:**
 
