@@ -99,6 +99,40 @@ The spec is based on the 2026 edition. Key changes from the 2021 edition that ar
 
 The full text of the standard is required for cross-referencing during development but cannot be committed to the repository. Developers should have a licensed copy of NFPA 160 (2026) available. The standard can be viewed at no cost at [nfpa.org/docinfo](https://nfpa.org/docinfo).
 
+## Technology Stack
+
+### Decided
+
+| Layer | Choice | Notes |
+|---|---|---|
+| **Framework** | Ruby on Rails 8+ | Convention-over-configuration; strong form/model/validation support for questionnaire workflows |
+| **Front-end** | Hotwire (Turbo + Stimulus) | Dynamic form behavior for conditional fields without SPA complexity |
+| **CSS** | Tailwind CSS | Utility-first styling for a forms-heavy UI |
+| **Database** | PostgreSQL via Cloud SQL | Managed instance (`db-f1-micro`, ~$10/month); native Cloud Run connector |
+| **Background Jobs** | Solid Queue | Rails 8 built-in; PostgreSQL-backed, no Redis required |
+| **Caching** | Solid Cache | Rails 8 built-in; PostgreSQL-backed |
+| **WebSocket** | Solid Cable | Rails 8 built-in; PostgreSQL-backed; for job progress updates during document generation |
+| **File Storage** | Active Storage → Google Cloud Storage | Rails built-in; GCS adapter for attachments (SDS sheets, drawings, manuals) |
+| **Hosting** | Google Cloud Run | Containerized, scales to zero, no infrastructure management |
+| **Authentication** | Google Account (OmniAuth) | Single sign-on via Google; no password management |
+| **Authorization** | Lightweight controller scoping | Users see only their own records; inspectors get read-only access to submitted plans |
+
+### User Roles
+
+| Role | Access |
+|---|---|
+| **Artist / Operator** | Create and manage their own plans, effects, personnel, procedures |
+| **Inspector** | Read-only access to submitted plans (assigned by jurisdiction/AHJ) |
+
+### Open Framework Decisions
+
+These should be resolved before or during early development:
+
+- **Document generation approach:** How to render the final plan document. Options include Prawn (Ruby-native PDF), Grover/Ferrum (HTML-to-PDF via headless Chrome, reuses views/Tailwind), Typst (modern typesetting engine), or LaTeX. Choice affects template design strategy.
+- **CSS component approach:** Whether to use ViewComponent (GitHub's gem), Phlex (pure-Ruby HTML rendering), or plain Rails partials for reusable UI components across 11 entity form types.
+- **Form builder:** Whether to use Simple Form (declarative DSL, good Tailwind integration), or build on the default Rails form builder. The app has 20+ conditional branching rules (Appendix C) that will benefit from a consistent form abstraction.
+- **Testing framework:** Minitest (Rails default, simple, fast) vs RSpec (more expressive, larger ecosystem).
+
 ## Open Questions
 
 Items not yet resolved that should be addressed as the project progresses:
