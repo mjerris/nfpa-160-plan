@@ -6,15 +6,17 @@ A reusable entity for performer-based fire effects. Artists save one record per 
 
 **Note:** Chapter 9 control system requirements do NOT apply to fire performances [9.1]. This entity contains the Chapter 14 requirements instead, which govern performers, props, spotters, and fueling procedures.
 
-## 8.1 Performer Records
+## 8.1 Performers
 
-| Field | Required | Section | Guidance |
+Performers are linked to a fire performance through Role Assignment records in Entity 2. Each person assigned to this submission who participates in this performance must have a Person Record (Entity 2.1) on file.
+
+| Validation | Required | Section | Guidance |
 |---|---|---|---|
-| Performers shall act in accordance with operator competency requirements (experience/training or AHJ-acceptable license) | Yes | [14.1], [8.1.2] | |
-| Substance abuse acknowledgment (per Section 8.3) | Yes | [14.1.1.1] | Same requirements as operators |
-| Each performer physically capable of executing their performance | Yes | [14.1.1.2] | |
-| At least one cast member designated as flame effect operator | Yes | [14.1.1.3.1] | New in 2026 edition |
-| Designated flame effect operator complies with Chapter 8 requirements | Yes | [14.1.1.3.2] | Including age ≥21, competency, etc. |
+| All performers meet operator competency requirements (experience/training or AHJ-acceptable license) | Yes | [14.1], [8.1.2] | Validated from Person Record (Entity 2.1) |
+| All performers have substance abuse acknowledgment signed | Yes | [14.1.1.1] | Validated from Person Record (Entity 2.1) |
+| Each performer physically capable of executing their performance | Yes | [14.1.1.2] | UI confirmation during role assignment |
+| At least one cast member designated as flame effect operator | Yes | [14.1.1.3.1] | At least one Role Assignment for this submission must have Role = Flame Effect Operator; new in 2026 edition |
+| Designated flame effect operator complies with Chapter 8 requirements | Yes | [14.1.1.3.2] | Validated from Person Record: age ≥21, competency docs, substance acknowledgment |
 
 ## 8.2 Rehearsal
 
