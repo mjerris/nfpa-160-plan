@@ -13,7 +13,7 @@ Applies to every submission regardless of submission type, installation type, or
 | SDS referenced (from global library) for every distinct fuel across all effects or performances | [5.3.2(6)] |
 | Site plan includes all mandatory elements from [5.3.2(5)] | [5.3.2(5)] |
 | Holding area quantity ≤1 day unless AHJ approval documented | [4.2.1.1] |
-| Total fuel consumption across all effects or performances ≤ declared holding area capacity | [5.3.2(5)(h)] |
+| Sum of estimated fuel consumption (Entity 3, §3.2 or Entity 8, §8.5) across all effects or performances ≤ sum of maximum quantity across all holding/storage areas (Entity 7) | [5.3.2(5)(h)] |
 | All fuel quantities listed with estimated consumption | [5.3.2(5)(e)] |
 | Flame retardant documentation present for combustible construction materials | [5.3.2(7)] |
 | Emergency response procedures included | [5.3.2(5)(j)] |
