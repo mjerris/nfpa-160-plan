@@ -39,6 +39,7 @@ Each procedure sub-entity below is **independently reusable** across submissions
 | Field | Required | Section | Guidance |
 |---|---|---|---|
 | Show operations plan (in accordance with AHJ-approved plan) | Yes | [7.6] | |
+| Weather and environmental halt conditions: effects shall not be operated during conditions that create a hazardous situation | Yes | [7.6.1] | Manufacturer must specify min/max ambient temperature if critical to operation [7.6.1.1] |
 
 ## 5.4 Post-Show Procedures
 
