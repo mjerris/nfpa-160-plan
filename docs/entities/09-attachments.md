@@ -28,7 +28,7 @@ Attachments are stored directly on their parent entity via Active Storage. They 
 |---|---|---|---|
 | SDS references (from global library) | Yes | [5.3.2(6)] | One per distinct fuel used by this effect |
 | Design drawings, manuals, or written descriptions | Yes | [6.1.1] | Stored on the effect record |
-| Testing and evaluation documentation | Yes | [7.1.5], [15.1.2] | Stored on the effect record |
+| Testing and evaluation documentation | Yes | [7.1.1], [15.1.2] | Stored on the effect record |
 | Pressure test records | Conditional | [15.2] | If piping is used |
 | Flame retardant documentation | Yes | [5.3.2(7)] | For combustible construction materials |
 
@@ -66,7 +66,7 @@ At document generation time, the system verifies:
 |---|---|---|
 | Every distinct fuel across all effects and performances has an SDS reference from the global library | [5.3.2(6)] | Entity 3, Entity 8 → SDS Library |
 | Every flame effect has design drawings or written descriptions | [6.1.1] | Entity 3 |
-| Every flame effect has testing documentation | [7.1.5], [15.1.2] | Entity 3 |
+| Every flame effect has testing documentation | [7.1.1], [15.1.2] | Entity 3 |
 | Flame retardant documentation present for effects with combustible construction materials | [5.3.2(7)] | Entity 3 |
 | Site plan diagram(s) uploaded | [5.3.2(5)] | Entity 4 |
 | Operators have competency documents or declaration on file | [8.1.2] | Entity 2 |
