@@ -37,6 +37,7 @@ Each saved flame effect (Entity 3) should render as a self-contained subsection 
 - Appliance description
 - Control system description (only manual OR automatic fields as applicable)
 - Hazard area definition
+- If portable: storage and security plan
 - Post-operation securing procedure
 - Testing and evaluation records
 
