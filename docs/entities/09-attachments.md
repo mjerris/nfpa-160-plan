@@ -69,7 +69,7 @@ At document generation time, the system verifies:
 | Every flame effect has testing documentation | [7.1.1], [15.1.2] | Entity 3 |
 | Flame retardant documentation present for effects with combustible construction materials | [5.3.2(7)] | Entity 3 |
 | Site plan diagram(s) uploaded | [5.3.2(5)] | Entity 4 |
-| Operators have competency documents or declaration on file | [8.1.2] | Entity 2 |
+| Operators have competency evidence on file (uploaded documents or self-attestation) | [8.1.2] | Entity 2 |
 | If piping: pressure test records present | [15.2] | Entity 3 |
 | If permanent: fire hazards evaluation report present (when required) | [16.2.1] | Entity 1 |
 | If prepackaged fuel: manufacturer instructions present | [11.1.8] | Entity 1 |
