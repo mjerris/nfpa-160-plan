@@ -14,6 +14,7 @@ Applies to every submission regardless of installation type or fuel.
 | Site plan includes all mandatory elements from [5.3.2(5)] | [5.3.2(5)] |
 | Written operating instructions exist (start-up, show, shutdown, emergency) | [6.2.1] |
 | Holding area quantity ≤1 day unless AHJ approval documented | [4.2.1.1] |
+| Total fuel consumption across all effects and performances ≤ declared holding area capacity | [5.3.2(5)(h)] |
 | All fuel quantities listed with estimated consumption | [5.3.2(5)(e)] |
 | Flame retardant documentation present for combustible construction materials | [5.3.2(7)] |
 | Post-show defueling procedure defined by operator | [7.7.3], [7.7.3.1] |
