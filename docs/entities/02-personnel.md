@@ -1,5 +1,13 @@
 # Entity 2: Personnel
 
+Each personnel sub-entity below is **independently reusable** across submissions. Artists can save individual personnel records (operators, assistants, spotters, standby personnel) and attach them to multiple submissions without re-entering data.
+
+**Reusable sub-entities:**
+- 2.1 Flame Effect Operator
+- 2.2 Assistants
+- 2.4 Spotters (Fire Performance)
+- 2.5 Standby Fire Safety Personnel
+
 ## 2.1 Flame Effect Operator
 
 At least one per submission.

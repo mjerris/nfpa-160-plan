@@ -9,12 +9,11 @@ SUBMISSION (Production/Event)
 ├── SITE PLAN (one per submission, includes diagrams)
 │   ├── Outdoor Additions
 │   └── Indoor Additions
-├── PERSONNEL
-│   ├── Responsible Party
-│   ├── Flame Effect Operator(s)
-│   ├── Assistants / Support Personnel
-│   ├── Spotters (fire performance)
-│   └── Standby Fire Safety Personnel
+├── PERSONNEL (each sub-entity independently reusable)
+│   ├── Flame Effect Operator(s) ─────────┐
+│   ├── Assistants ───────────────────────┼── each can be saved
+│   ├── Spotters (fire performance) ──────┤   and reused across
+│   └── Standby Fire Safety Personnel ────┘   submissions
 │
 ├── ══════════════════════════════════════════════════════════
 │   CORE ENTITIES (at least one required per submission)
@@ -74,7 +73,7 @@ SUBMISSION (Production/Event)
 | Production/Event → Flame Effect | 1 : 0..many | Zero or more flame effects per submission |
 | Production/Event → Fire Performance | 1 : 0..many | Zero or more fire performances per submission |
 | Production/Event → Site Plan | 1 : 1 | One site plan per submission |
-| Production/Event → Personnel | 1 : many | One or more operators, assistants, spotters |
+| Production/Event → Personnel (each type) | 1 : 0..many | Zero or more of each personnel sub-entity; each independently reusable |
 | Production/Event → Procedure (each type) | 1 : 0..many | Zero or more of each procedure sub-entity; each independently reusable |
 | Production/Event → Fire Protection Plan | 1 : 1 | One fire protection plan per submission |
 | Production/Event → Holding/Storage | 1 : many | One or more holding/storage areas |
@@ -95,7 +94,11 @@ The following entities are designed to be **saved independently** and reused acr
 
 - **Flame Effect** (Entity 3) — apparatus-based effects with control systems (Chapter 9); an artist's saved effect can be included in multiple event submissions
 - **Fire Performance** (Entity 8) — performer-based effects with props/wicks (Chapter 14); a performer's saved routine can be included in multiple event submissions
-- **Personnel** (Entity 2) — operator profiles, assistant records
+- **Personnel** (Entity 2) — each sub-entity is independently reusable:
+  - Flame Effect Operator
+  - Assistants
+  - Spotters
+  - Standby Fire Safety Personnel
 - **Procedures** (Entity 5) — each sub-entity is independently reusable:
   - Operating Procedures
   - Rehearsal / Pre-Show Procedures

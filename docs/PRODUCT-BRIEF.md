@@ -35,7 +35,11 @@ A key design goal is that artists **define things once and reuse them**. An arti
 **Reusable across submissions:**
 - Entity 3: Individual Flame Effect (apparatus-based effects with control systems — Chapter 9 applies)
 - Entity 8: Fire Performance (performer-based effects with props/wicks — Chapter 14 applies)
-- Entity 2: Personnel (operator profiles, assistant records)
+- Entity 2: Personnel — each sub-entity is independently reusable:
+  - Flame Effect Operator
+  - Assistants
+  - Spotters
+  - Standby Fire Safety Personnel
 - Entity 5: Procedures — each sub-entity is independently reusable:
   - Operating Procedures
   - Rehearsal / Pre-Show Procedures
