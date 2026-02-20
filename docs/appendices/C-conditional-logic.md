@@ -35,8 +35,9 @@ A submission must be one type: either flame effects or fire performances. They c
 | Condition | Shows Fields For | Section |
 |---|---|---|
 | Hybrid = Yes | NFPA 160/1126 portion identification fields | [5.2.2.3] |
-| Type = Automatic | Automatic control system fields (keyswitch, auto emergency stop, auto arming, auto firing) | [9.1.2], [9.2.1.5], [9.2.4.4], [9.2.5.5.2] |
-| Type = Manual | Manual control system fields (manual emergency stop plan, manual arming, manual firing) | [9.2.1.4], [9.2.4.3], [9.2.5.5.1] |
+| Control Type = Automatic | Automatic control system fields (keyswitch, auto emergency stop, auto arming, auto firing) | [9.1.2], [9.2.1.5], [9.2.4.4], [9.2.5.5.2] |
+| Control Type = Manual | Manual control system fields (manual emergency stop plan, manual arming, manual firing) | [9.2.1.4], [9.2.4.3], [9.2.5.5.1] |
+| Portable = Yes | Portable storage and security plan fields | [7.11.2] |
 
 ## System Component Conditions
 

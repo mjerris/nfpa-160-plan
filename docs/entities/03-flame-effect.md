@@ -13,7 +13,8 @@ A reusable entity for apparatus-based flame effects. Artists save one record per
 | Effect name / identifier (user-defined) | Recommended | — | For internal tracking and reference in site plan |
 | Flame effect classification (Group I–VII) | Yes | [5.3.2(4)] | See classification table below |
 | Narrative description of the flame effect | Yes | [5.3.2(5)(a)] | Plain-language description of what the effect does |
-| Type: Automatic, Manual, or Portable | Yes | [3.3.13.1], [3.3.13.3], [3.3.13.4] | Drives control system requirements |
+| Control type: Automatic or Manual | Yes | [3.3.13.1], [3.3.13.3] | Drives control system requirements (Chapter 9) |
+| Portable: Yes/No | Yes | [3.3.13.4] | If yes, requires storage and security plan [7.11.2] |
 | Is this a hybrid flame effect? (Y/N) | Yes | [3.3.13.2], [5.2.1.1] | If yes, must identify NFPA 160 vs 1126 portions |
 | If hybrid: description of portions governed by NFPA 160 | Conditional | [5.2.2.3] | |
 | If hybrid: description of portions governed by NFPA 1126 | Conditional | [5.2.2.3] | |
