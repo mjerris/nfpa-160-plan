@@ -15,7 +15,7 @@ Site plan diagrams are stored on the site plan record via Active Storage.
 | Location of the audience | Yes | [5.3.2(5)(d)] | |
 | Fuels used and estimated consumption | Yes | [5.3.2(5)(e)] | |
 | Air for combustion and ventilation for indoor effects | Conditional | [5.3.2(5)(f)] | Only for indoor venues |
-| Flammable materials piping layout | Yes | [5.3.2(5)(g)] | |
+| Flammable materials piping layout | Yes | [5.3.2(5)(g)] | Show N/A if no piping is used |
 | Storage and holding areas with their capacities | Yes | [5.3.2(5)(h)] | |
 | Supplemental fire protection features | Yes | [5.3.2(5)(i)] | |
 | Emergency response procedures | Yes | [5.3.2(5)(j)] | |
