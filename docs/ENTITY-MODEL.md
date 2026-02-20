@@ -12,7 +12,7 @@ SUBMISSION (Production/Event)
 │   └── Indoor Additions
 ├── PERSONNEL
 │   ├── Person Records (reusable) ──────── saved once, assigned to roles
-│   │   └── Competency documents / substance acknowledgment
+│   │   └── Competency evidence / substance acknowledgment
 │   └── Role Assignments (per submission)
 │       ├── Flame Effect Operator(s)
 │       ├── Assistants
@@ -24,7 +24,7 @@ SUBMISSION (Production/Event)
 │   ══════════════════════════════════════════════════════════
 │
 ├── FLAME EFFECTS (one or more — apparatus-based, Chapter 9)
-│   ├── Effect Identity & Classification
+│   ├── Effect Identity & Classification (Control Type + Portable)
 │   ├── Fuel Specification ─────────────── references Global SDS Library
 │   │   ├── Gaseous Fuel Fields
 │   │   ├── Liquid Fuel Fields
@@ -45,7 +45,7 @@ SUBMISSION (Production/Event)
 │   ├── Performers ─────────────────────── linked via Role Assignments (Entity 2)
 │   ├── Safety Personnel (Spotters) ────── linked via Role Assignments (Entity 2)
 │   ├── Fire Props
-│   ├── Fueling Plan ───────────────────── references Global SDS Library
+│   ├── Fueling Plan ───────────────────── references Global SDS Library; estimated fuel consumption
 │   ├── Performance Plan
 │   └── Post-Performance Procedures
 │
@@ -94,7 +94,7 @@ SUBMISSION (Production/Event)
 | Fire Performance → SDS (global library) | 1 : 1..many | Each performance references SDS records for its fuels |
 | Fire Performance → Performers | 1 : many | Linked via Role Assignments (Entity 2) |
 | Fire Performance → Spotters | 1 : many | At least one; linked via Role Assignments (Entity 2) with Fire Performance FK |
-| Person → Competency Documents | 1 : 0..many | Stored on person via Active Storage |
+| Person → Competency Evidence | 1 : 0..many | Stored on person via Active Storage |
 
 **Note:** Each submission is one type: either flame effects (Chapter 9) or fire performances (Chapter 14). They cannot be mixed in a single submission. At least one effect or performance must be defined.
 
@@ -104,7 +104,7 @@ The following entities are designed to be **saved independently** and reused acr
 
 - **Flame Effect** (Entity 3) — apparatus-based effects with control systems (Chapter 9); an artist's saved effect can be included in multiple event submissions. Design drawings and test records travel with the effect.
 - **Fire Performance** (Entity 8) — performer-based effects with props/wicks (Chapter 14); a performer's saved routine can be included in multiple event submissions
-- **Personnel** (Entity 2) — person records are saved once and assigned to roles per submission via Role Assignment records (Entity 2.2); the same person can hold multiple roles (e.g., flame effect operator + spotter). Competency documents are stored on the person record.
+- **Personnel** (Entity 2) — person records are saved once and assigned to roles per submission via Role Assignment records (Entity 2.2); the same person can hold multiple roles (e.g., flame effect operator + spotter). Competency evidence is stored on the person record.
 - **Site Plan** (Entity 4) — site plans can be reused across submissions for the same venue; diagrams stored via Active Storage
 - **Procedures** (Entity 5) — each sub-entity is independently reusable:
   - Operating Procedures
@@ -141,7 +141,7 @@ Entity 9 defines **attachment requirements** rather than being a standalone data
 | SDS sheets | Global SDS Library | Yes (shared across all users) |
 | Design drawings / manuals | Flame Effect (Entity 3) | Yes (travels with effect) |
 | Test records | Flame Effect (Entity 3) | Yes (travels with effect) |
-| Competency documents | Person Record (Entity 2) | Yes (travels with person) |
+| Competency evidence | Person Record (Entity 2) | Yes (travels with person) |
 | Site plan diagrams | Site Plan (Entity 4) | Yes (travels with site plan) |
 | Fire hazards evaluation | Submission (Entity 1) | No |
 | Manufacturer instructions | Submission (Entity 1) | No |
