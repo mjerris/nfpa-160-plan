@@ -307,3 +307,5 @@ The plan must specify one of two approaches [9.2.1.1]:
 | Temperatures observed until maximum or stable reading attained | Yes | [15.3.2.1], [15.3.2.4] | |
 | Confirmation: attained temperatures do not exceed rated temperatures | Yes | [15.3.2.2] | |
 | Combustible material temperatures: do not exceed 117°F (47.2°C) above ambient after equilibrium | Yes | [15.3.2.3] | |
+
+**Note:** The AHJ shall be permitted to witness the testing of any flame effect. [7.1.5]
