@@ -1,5 +1,7 @@
 # Entity 6: Fire Protection Plan
 
+**Reusable sub-entity:** Section 6.2 (Fire Extinguisher Plan) can be saved and reused across submissions. Artists with a standard extinguisher setup can define it once and attach it to multiple events.
+
 ## 6.1 General Fire Protection
 
 | Field | Required | Section | Guidance |
@@ -7,7 +9,9 @@
 | Supplemental fire protection features description | Yes | [5.3.2(5)(i)] | |
 | Confirmation: fire protection and life safety systems will NOT be interrupted during operation | Yes | [5.5] | Default requirement |
 
-## 6.2 Temporary Installation — Fire Protection
+## 6.2 Temporary Installation — Fire Extinguisher Plan (Reusable)
+
+This sub-entity is **independently reusable** across submissions. Artists can save their standard fire extinguisher configuration and attach it to multiple events.
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|

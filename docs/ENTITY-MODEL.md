@@ -56,7 +56,7 @@ SUBMISSION (Production/Event)
 │   ├── Housekeeping ─────────────────────┤
 │   └── Protective Clothing ──────────────┘
 ├── FIRE PROTECTION PLAN
-│   ├── Fire Extinguisher Plan (Temporary)
+│   ├── Fire Extinguisher Plan (Temporary) ── reusable
 │   ├── Fire Hazards Evaluation (Permanent)
 │   └── Standby Personnel
 ├── HOLDING / STORAGE AREAS
@@ -112,7 +112,7 @@ The following entities are **per-submission** and not typically reused:
 
 - Production/Event (Entity 1)
 - Site Plan (Entity 4)
-- Fire Protection Plan (Entity 6)
+- Fire Protection Plan (Entity 6) — except Fire Extinguisher Plan (§6.2), which is reusable
 - Holding/Storage (Entity 7)
 - Attachments (Entity 9)
 - Review/Coordination (Entity 10)

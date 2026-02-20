@@ -54,7 +54,7 @@ A key design goal is that artists **define things once and reuse them**. An arti
 **Per-submission (event-specific):**
 - Entity 1: Production/Event
 - Entity 4: Site Plan
-- Entity 6: Fire Protection Plan
+- Entity 6: Fire Protection Plan — except Fire Extinguisher Plan (§6.2), which is reusable
 - Entity 7: Holding/Storage Areas
 - Entity 9: Attachments (some may be reusable, like SDS sheets, but the index is per-submission)
 - Entity 10: Review & Coordination
