@@ -5,7 +5,8 @@
 ```
 SUBMISSION (Production/Event)
 ├── PRODUCTION INFO (one per submission)
-│   └── Installation Classification (Temporary or Permanent)
+│   ├── Installation Classification (Temporary or Permanent)
+│   └── Submission Status & Review History
 ├── SITE PLAN (reusable, one or more per submission)
 │   ├── Outdoor Additions
 │   └── Indoor Additions

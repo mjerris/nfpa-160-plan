@@ -1,6 +1,6 @@
 # Appendix B: Validation Rules
 
-Rules the system should enforce before allowing document generation.
+Rules the system should enforce before allowing document generation and before allowing submission for review (Draft → Submitted transition). Artists can also run a "check completeness" action at any time to see which rules are not yet satisfied.
 
 ## Universal Validation
 

@@ -50,3 +50,54 @@ One record per submission. Describes the overall production context.
 | Permanent | >180 days | [5.1.2.1], [3.3.22.1] |
 
 System should auto-calculate classification based on permit dates and flag if it crosses the 180-day threshold. [A.5.1.2]
+
+## 1.5 Submission Status & Review Workflow
+
+### Status
+
+| Field | Required | Notes |
+|---|---|---|
+| Status | Yes | Current submission status (see workflow below) |
+| Submitted date | Conditional | Set when artist first submits; updated on each resubmission |
+| Decision date | Conditional | Set when inspector approves or rejects |
+
+### Status Workflow
+
+```
+Draft → Submitted → Under Review → Approved
+                                 → Rejected
+                                 → Changes Requested → (artist edits) → Submitted
+```
+
+| Status | Who acts | Description |
+|---|---|---|
+| **Draft** | Artist | Submission is being built. Artist can edit all fields freely. Not visible to inspectors. |
+| **Submitted** | Artist → Inspector | Artist marks submission complete. Validation rules (Appendix B) run at this transition. Submission becomes visible to inspectors and read-only to the artist. |
+| **Under Review** | Inspector | Inspector has picked up the submission and is actively reviewing it. |
+| **Changes Requested** | Inspector → Artist | Inspector provides feedback notes. Submission returns to an editable state for the artist to address feedback. |
+| **Approved** | Inspector | Submission is approved. Decision date and any approval conditions are recorded. |
+| **Rejected** | Inspector | Submission is fundamentally unacceptable. Decision date and rejection reason are recorded. |
+
+**Resubmission:** When an artist resubmits after changes are requested, validation rules run again and the status returns to **Submitted**. The inspector can pick it up for another review cycle.
+
+### Review History
+
+Each status change is recorded with notes, creating an audit trail of the review process.
+
+| Field | Required | Notes |
+|---|---|---|
+| Author | Yes | Name of the person (artist or inspector) who made the entry |
+| Date | Yes | When the entry was created |
+| Action | Yes | The status transition (e.g., Submitted, Under Review, Changes Requested, Resubmitted, Approved, Rejected) |
+| Notes | Conditional | Feedback, response, or decision rationale; required for Changes Requested and Rejected |
+
+**Example review history:**
+
+| Date | Author | Action | Notes |
+|---|---|---|---|
+| 2025-06-01 | Jane (artist) | Submitted | Initial submission |
+| 2025-06-03 | Marshal Smith | Under Review | |
+| 2025-06-04 | Marshal Smith | Changes Requested | Site plan missing extinguisher placement on south side; SDS for denatured alcohol is expired (2019) |
+| 2025-06-05 | Jane (artist) | Resubmitted | Updated site plan with extinguisher placement; replaced SDS with current version (2024) |
+| 2025-06-06 | Marshal Smith | Under Review | |
+| 2025-06-06 | Marshal Smith | Approved | All requirements satisfied |
