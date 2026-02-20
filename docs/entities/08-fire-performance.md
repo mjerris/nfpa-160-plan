@@ -79,6 +79,7 @@ Performers are linked to a fire performance through Role Assignment records in E
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|
+| Estimated fuel consumption (quantity + time period) | Yes | [5.3.2(5)(e)] | Used for fuel capacity validation against holding/storage areas (Entity 7) |
 | Fueling takes place in approved area | Yes | [14.3.5.1] | Away from unauthorized personnel, well ventilated, free of ignition sources [A.14.3.5.1] |
 | All fueling in approved fueling area | Yes | [14.4.2.1] | |
 | Fueling area located outside or in approved area | Yes | [14.4.2.4] | |
