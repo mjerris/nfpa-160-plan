@@ -156,6 +156,7 @@ Items identified during data model review that are out of scope for the initial 
 
 - **Inspection and test record entities:** Currently, test records for flame effects are stored as attachments via Active Storage on Entity 3. A future enhancement could introduce structured inspection/test record entities with fields for test type, date, result, and inspector — enabling validation of testing schedules and expiration tracking.
 - **Deviation and variance tracking:** The system does not currently model deviations from approved plans or variance requests. A future enhancement could allow artists to document and track AHJ-approved deviations from standard requirements, with an audit trail of what was requested and approved.
+- **Safety guidance and warnings acknowledgment:** The standard and annexes contain numerous safety warnings and guidance notes (e.g., ethanol absorption risks for fire breathers [A.14.1.1.1], hazardous exposure advisories [7.5.1], prohibited fuel types [A.11.1.2]). A future enhancement could assemble these into a consolidated safety guidance document per submission and provide a mechanism to send it to all assigned personnel for review and acknowledgment.
 
 ## Related Standards
 

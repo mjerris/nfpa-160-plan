@@ -83,4 +83,3 @@ A submission must be one type: either flame effects or fire performances. They c
 |---|---|---|
 | Bare skin in effect = Yes | Illusion of danger documentation | [7.10.2] |
 | Smoking in performance = Yes | AHJ approval for performance smoking | [7.4.2] |
-| Fire breathing with ethanol = Yes | Ethanol absorption warning and spacing guidance | [A.14.1.1.1] |
