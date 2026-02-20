@@ -20,7 +20,7 @@ Site plan diagrams are stored on the site plan record via Active Storage.
 | Supplemental fire protection features | Yes | [5.3.2(5)(i)] | |
 | Emergency response procedures | Yes | [5.3.2(5)(j)] | |
 | Means of egress | Yes | [5.3.2(5)(k)] | |
-| Location of manual emergency stop control stations | Yes | [9.2.1.6.1] | Must be clearly identified and accessible |
+| Location of manual emergency stop control stations | Conditional | [9.2.1.6.1] | Flame effects submissions only (Chapter 9); must be clearly identified and accessible |
 | Location of manual fuel shutoff valves | Conditional | [9.2.2.4.1(1)] | If central distribution |
 | Fire extinguisher placement (temporary): ≥4 extinguishers, at least one on each opposing side | Conditional | [16.3.2], [16.3.2.2] | Temporary installations |
 | Separation distance between effects and audience | Recommended | [A.7.1.2] | Skin temp should not exceed 111°F (44°C) |
