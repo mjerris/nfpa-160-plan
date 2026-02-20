@@ -5,7 +5,7 @@
 | Field | Required | Section | Guidance |
 |---|---|---|---|
 | Plan reviewed with AHJ | Yes | [5.3.4] | |
-| Plan reviewed with flame effects operator | Yes | [5.3.4] | |
+| Plan reviewed with flame effect operator | Yes | [5.3.4] | |
 | Plan reviewed with building owner/representative | Yes | [5.3.4] | |
 | Purpose: ensure coordinated response in event of emergency | Yes | [5.3.4] | |
 

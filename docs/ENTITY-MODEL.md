@@ -104,7 +104,7 @@ The following entities are designed to be **saved independently** and reused acr
 
 - **Flame Effect** (Entity 3) — apparatus-based effects with control systems (Chapter 9); an artist's saved effect can be included in multiple event submissions. Design drawings and test records travel with the effect.
 - **Fire Performance** (Entity 8) — performer-based effects with props/wicks (Chapter 14); a performer's saved routine can be included in multiple event submissions
-- **Personnel** (Entity 2) — person records are saved once and assigned to roles per submission via Role Assignment records (Entity 2.2); the same person can hold multiple roles (e.g., operator + spotter). Competency documents are stored on the person record.
+- **Personnel** (Entity 2) — person records are saved once and assigned to roles per submission via Role Assignment records (Entity 2.2); the same person can hold multiple roles (e.g., flame effect operator + spotter). Competency documents are stored on the person record.
 - **Site Plan** (Entity 4) — site plans can be reused across submissions for the same venue; diagrams stored via Active Storage
 - **Procedures** (Entity 5) — each sub-entity is independently reusable:
   - Operating Procedures

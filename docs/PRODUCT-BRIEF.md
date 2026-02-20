@@ -35,7 +35,7 @@ A key design goal is that artists **define things once and reuse them**. An arti
 **Reusable across submissions:**
 - Entity 3: Individual Flame Effect (apparatus-based effects with control systems — Chapter 9 applies). Design drawings and test records are stored on the effect and travel with it.
 - Entity 8: Fire Performance (performer-based effects with props/wicks — Chapter 14 applies)
-- Entity 2: Personnel — person records are saved once and assigned to roles per submission via Role Assignment records; the same person can hold multiple roles (e.g., operator + spotter). Competency documents are stored on the person record.
+- Entity 2: Personnel — person records are saved once and assigned to roles per submission via Role Assignment records; the same person can hold multiple roles (e.g., flame effect operator + spotter). Competency documents are stored on the person record.
 - Entity 4: Site Plan — reusable for the same venue across submissions; diagrams stored via Active Storage
 - Entity 5: Procedures — each sub-entity is independently reusable:
   - Operating Procedures
@@ -90,8 +90,8 @@ The spec is based on the 2026 edition. Key changes from the 2021 edition that ar
 | Change | Section | Impact |
 |---|---|---|
 | Post-show defueling requirements now apply universally to **all fuels** (previously gas-focused) | [7.7.3] | Affects all fuel types in Entity 3 and post-show procedures in Entity 5 |
-| **Operator** (not production management) determines post-show defueling time | [7.7.3.1] | UX should make clear this is the operator's responsibility to define |
-| Fire performers must designate **at least one cast member as flame effect operator** | [14.1.1.3.1] | New required field in Entity 8; that designated person must meet all Chapter 8 operator requirements |
+| **Flame effect operator** (not production management) determines post-show defueling time | [7.7.3.1] | UX should make clear this is the flame effect operator's responsibility to define |
+| Fire performers must designate **at least one cast member as flame effect operator** | [14.1.1.3.1] | New required field in Entity 8; that designated person must meet all Chapter 8 flame effect operator requirements |
 | Emergency stop control stations must **maintain actuated state until manually reset** | [9.2.1.6.1.1] | New explicit requirement for control system description in Entity 3 |
 
 ## Source Standard

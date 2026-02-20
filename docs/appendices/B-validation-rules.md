@@ -17,7 +17,7 @@ Applies to every submission regardless of installation type or fuel.
 | Total fuel consumption across all effects and performances ≤ declared holding area capacity | [5.3.2(5)(h)] |
 | All fuel quantities listed with estimated consumption | [5.3.2(5)(e)] |
 | Flame retardant documentation present for combustible construction materials | [5.3.2(7)] |
-| Post-show defueling procedure defined by operator | [7.7.3], [7.7.3.1] |
+| Post-show defueling procedure defined by flame effect operator | [7.7.3], [7.7.3.1] |
 | If hybrid: NFPA 160 and NFPA 1126 portions identified | [5.2.2.3] |
 | Plan submission format acceptable to AHJ | [5.3.1] |
 | Emergency response procedures included | [5.3.2(5)(j)] |
@@ -41,7 +41,7 @@ Applies to every submission regardless of installation type or fuel.
 | Permit duration and expiration specified | [5.1.3.2.2] |
 | Duration >180 days confirmed | [5.1.2.1] |
 | Fire hazards evaluation completed (when AHJ requires) | [16.2.1] |
-| Evaluation coordinated with building owner, operator, and AHJ | [16.2.2] |
+| Evaluation coordinated with building owner, flame effect operator, and AHJ | [16.2.2] |
 | Fire/life safety interruption only during initial acceptance | [5.5.2] |
 
 ## Fuel-Type-Specific Validation

@@ -7,7 +7,7 @@ Assembly order and logic for generating the final submission document from saved
 When the system assembles a final submission document from saved entities, it should combine sections in the following order:
 
 1. **Production/Event header** ([Entity 1](../entities/01-production-event.md)) — including installation classification
-2. **Personnel section** ([Entity 2](../entities/02-personnel.md)) — operator(s), assistants, support personnel
+2. **Personnel section** ([Entity 2](../entities/02-personnel.md)) — flame effect operator(s), assistants, support personnel
 3. **Site Plan with diagram(s)** ([Entity 4](../entities/04-site-plan.md)) — referencing all saved effects, with indoor/outdoor additions as applicable
 4. **Individual Flame Effect descriptions** ([Entity 3](../entities/03-flame-effect.md), one or more) — each with fuel, appliance, control system, and hazard area subsections. Conditional sections shown based on fuel type selection.
 5. **Fire Performance section** ([Entity 8](../entities/08-fire-performance.md), if applicable) — performers, spotters, props, fueling, performance plan

@@ -20,7 +20,7 @@ Each procedure sub-entity below is **independently reusable** across submissions
 | Written show operations procedures | Yes | [6.2.1] | |
 | Written normal shutdown procedures | Yes | [6.2.1] | |
 | Written emergency shutdown procedures | Yes | [6.2.1] | |
-| Operating instructions available to operator | Yes | [6.2.2] | |
+| Operating instructions available to flame effect operator | Yes | [6.2.2] | |
 | Operating instructions available to AHJ | Yes | [5.3.3] | |
 | Means of communication between personnel during operations | Yes | [16.4.3] | Radio, hand signals, verbal, etc. |
 
@@ -28,9 +28,9 @@ Each procedure sub-entity below is **independently reusable** across submissions
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|
-| Procedure for operator to advise all performers and support personnel of hazardous exposure | Yes | [7.5.1] | |
+| Procedure for flame effect operator to advise all performers and support personnel of hazardous exposure | Yes | [7.5.1] | |
 | Confirmation that only voluntarily participating, familiar, experienced personnel are in effect area | Yes | [7.5.2] | |
-| Operator site inspection of all areas where effects are ignited (before start-up) | Yes | [7.3] | |
+| Flame effect operator site inspection of all areas where effects are ignited (before start-up) | Yes | [7.3] | |
 | Smoking prohibition in areas where fuels are present | Yes | [7.4.1] | |
 | If smoking is part of performance: AHJ approval | Conditional | [7.4.2] | |
 
@@ -44,11 +44,11 @@ Each procedure sub-entity below is **independently reusable** across submissions
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|
-| Operator site inspection of all areas where effects are ignited (after shutdown) | Yes | [7.3] | |
+| Flame effect operator site inspection of all areas where effects are ignited (after shutdown) | Yes | [7.3] | |
 | Procedure for restoring any interrupted fire and life safety systems immediately after completion | Yes | [7.7.1] | |
 | Person trained in all aspects of fire/life safety systems identified for restoration | Yes | [7.7.2] | |
 | Procedure for expending remaining fuels, removing receptacles, depressurizing tanks, disconnecting fuel sources prior to removal from venue | Yes | [7.7.3] | Applies universally to all fuels (2026 revision). Must comply with venue and local policies/regulations |
-| Operator-determined time required for post-show burn off or removal of residual fuels | Yes | [7.7.3.1] | New in 2026 edition — operator (not production management) determines this time |
+| Flame effect operator-determined time required for post-show burn off or removal of residual fuels | Yes | [7.7.3.1] | New in 2026 edition — flame effect operator (not production management) determines this time |
 
 ## 5.5 Emergency Response Procedures
 
@@ -56,7 +56,7 @@ Each procedure sub-entity below is **independently reusable** across submissions
 |---|---|---|---|
 | Emergency response procedures | Yes | [5.3.2(5)(j)] | Part of site plan requirements |
 | Emergency operations plan (in accordance with AHJ-approved plan) | Yes | [7.9] | |
-| Coordination with AHJ, operator, and building owner/representative prior to production | Yes | [5.3.4] | Ensures coordinated emergency response |
+| Coordination with AHJ, flame effect operator, and building owner/representative prior to production | Yes | [5.3.4] | Ensures coordinated emergency response |
 | Information on non-standard hazards provided to emergency responders upon request | Recommended | [A.5.3] | Hazards not commonly covered in emergency responder training |
 | Means of alarm transmission during emergency operations | Yes | [16.4.3] | How personnel signal an emergency (radio, alarm pull, verbal, etc.) |
 
@@ -65,7 +65,7 @@ Each procedure sub-entity below is **independently reusable** across submissions
 | Field | Required | Section | Guidance |
 |---|---|---|---|
 | Maintenance plan to design specifications | Yes | [7.8] | |
-| Inspection interval acceptable to AHJ | Yes | [7.1.3] | |
+| Inspection interval acceptable to AHJ | Yes | [7.1.3] | Flame effect operator coordinates with AHJ |
 
 ## 5.7 Housekeeping
 

@@ -221,7 +221,7 @@ The plan must specify one of two approaches [9.2.1.1]:
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|
-| Confirmation that ignition means can be clearly and directly seen by operator/assistant for entire enable time | Yes | [9.2.4.3.1] | |
+| Confirmation that ignition means can be clearly and directly seen by flame effect operator/assistant for entire enable time | Yes | [9.2.4.3.1] | |
 | If ignition cannot be seen: description of automatic arming confirmation | Conditional | [9.2.4.3.2] | |
 
 **Automatic arming [9.2.4.4]:**
@@ -251,7 +251,7 @@ The plan must specify one of two approaches [9.2.1.1]:
 
 | Field | Required | Section | Guidance |
 |---|---|---|---|
-| Operator responsibility to verify enable, arming, and hazard area safety prior to firing | Yes | [9.2.5.5.1] | |
+| Flame effect operator responsibility to verify enable, arming, and hazard area safety prior to firing | Yes | [9.2.5.5.1] | |
 
 **Automatic firing:**
 
@@ -270,9 +270,9 @@ The plan must specify one of two approaches [9.2.1.1]:
 | Definition of accessible hazard area (accessible without additional means) | Yes | [3.3.2.1.1] | |
 | Monitoring method: area confirmed clear before firing, OR access supervised by automatic means, OR area made inaccessible | Yes | [9.2.5.3.1] | |
 | Other safety-critical parameters monitored or supervised | Yes | [9.2.5.3.2] | |
-| Supervision method: direct observation by operator/assistant for entire enable/fire time | Yes | [9.2.5.4.1] | |
-| If hazard area cannot be seen by operator: alternative monitoring means (approved by AHJ) | Conditional | [9.2.5.4.2] | |
-| If all areas of concern cannot be seen by single operator: number and placement of enable buttons | Conditional | [9.2.5.4.3.1] | |
+| Supervision method: direct observation by flame effect operator/assistant for entire enable/fire time | Yes | [9.2.5.4.1] | |
+| If hazard area cannot be seen by flame effect operator: alternative monitoring means (approved by AHJ) | Conditional | [9.2.5.4.2] | |
+| If all areas of concern cannot be seen by single flame effect operator: number and placement of enable buttons | Conditional | [9.2.5.4.3.1] | |
 | Enable buttons monitored separately and verified by control system | Conditional | [9.2.5.4.3.2] | |
 
 ---
@@ -292,7 +292,7 @@ The plan must specify one of two approaches [9.2.1.1]:
 | Field | Required | Section | Guidance |
 |---|---|---|---|
 | Documentation that effect was tested to verify operation per design | Yes | [7.1.1], [15.1.1] | Stored on effect record via Active Storage |
-| Documentation that effect was evaluated: no hazardous exposure to spectators, performers, support personnel, or operator | Yes | [7.1.2] | Skin surface temp should not exceed 111°F (44°C) as measured by IR thermometer [A.7.1.2] |
+| Documentation that effect was evaluated: no hazardous exposure to spectators, performers, support personnel, or flame effect operator | Yes | [7.1.2] | Skin surface temp should not exceed 111°F (44°C) as measured by IR thermometer [A.7.1.2] |
 | Testing documentation from manufacturer or fabricator | Yes | [15.1.2] | |
 | Inspection interval acceptable to AHJ | Yes | [7.1.3] | Effects must be inspected and retested on AHJ-acceptable interval |
 | Third-party testing documentation (if applicable, acceptable to AHJ) | Conditional | [7.1.4] | |

@@ -1,6 +1,6 @@
 # Entity 2: Personnel
 
-Personnel records are **reusable person profiles**. Artists save individual people once, then assign them to roles within each submission. The same person can be assigned to multiple roles (e.g., an operator who is also a spotter).
+Personnel records are **reusable person profiles**. Artists save individual people once, then assign them to roles within each submission. The same person can be assigned to multiple roles (e.g., a flame effect operator who is also a spotter).
 
 ## 2.1 Person Record (Reusable)
 
@@ -10,12 +10,12 @@ Each person is saved once with their core information:
 |---|---|---|---|
 | Name | Yes | [5.3.2(8)] | |
 | Date of birth / age confirmation | Yes | [8.4] | Used to verify age requirements for specific roles |
-| Competency documents (uploaded files: certificates, licenses, training records) | Conditional | [8.1.2] | Required if person will be assigned as operator; stored via Active Storage |
-| Substance abuse acknowledgment signed (date tracked) | Conditional | [8.3] | Required if person will be assigned as operator or performer |
+| Competency documents (uploaded files: certificates, licenses, training records) | Conditional | [8.1.2] | Required if person will be assigned as flame effect operator; stored via Active Storage |
+| Substance abuse acknowledgment signed (date tracked) | Conditional | [8.3] | Required if person will be assigned as flame effect operator or performer |
 
 ## 2.2 Role Assignment Record (Per Submission)
 
-Each role assignment is a join record linking a saved person to a role within a specific submission. One person can have multiple role assignments in the same submission (e.g., operator and spotter).
+Each role assignment is a join record linking a saved person to a role within a specific submission. One person can have multiple role assignments in the same submission (e.g., flame effect operator and spotter).
 
 | Field | Required | Notes |
 |---|---|---|
@@ -31,7 +31,7 @@ Each role assignment is a join record linking a saved person to a role within a 
 When assigning a person to a role, the UI presents role-specific confirmations that must be acknowledged before the assignment is saved. These are acceptance gates in the assignment flow, not stored data fields:
 
 - **Flame Effect Operator:** Confirm familiarity with this submission's effects
-- **Assistant:** Confirm this person will work under operator supervision
+- **Assistant:** Confirm this person will work under flame effect operator supervision
 - **Spotter:** Confirm training in flame extinguishing, reaction time, equipment control, and audience control
 - **Standby Fire Safety Personnel:** Confirm working knowledge of supplemental equipment
 
@@ -47,8 +47,8 @@ These rules are checked at document generation time by validating the Person Rec
 | At least one competency document on file | [8.1.2] | Person Record |
 | Substance abuse acknowledgment signed | [8.3] | Person Record |
 
-**Operator Responsibilities Note (for system guidance text):**
-The operator is responsible for storage, setup, operations, teardown of all flame effect materials, devices, equipment, systems, and supervision of assistants. [8.2]
+**Flame Effect Operator Responsibilities Note (for system guidance text):**
+The flame effect operator is responsible for storage, setup, operations, teardown of all flame effect materials, devices, equipment, systems, and supervision of assistants. [8.2]
 
 ### Assistant
 

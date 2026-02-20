@@ -52,7 +52,7 @@ A submission must include at least one flame effect OR one fire performance. Bot
 | Condition | Shows Fields For | Section |
 |---|---|---|
 | Cast/set pieces in hazard area = Yes | PME requirement fields | [9.2.4.6] |
-| Hazard area not visible to operator = Yes | Alternative monitoring and enable button fields | [9.2.5.4.2], [9.2.5.4.3] |
+| Hazard area not visible to flame effect operator = Yes | Alternative monitoring and enable button fields | [9.2.5.4.2], [9.2.5.4.3] |
 | Ignition cannot be directly seen = Yes | Automatic arming confirmation fields | [9.2.4.3.2] |
 | Interrelated system hazards exist = Yes | Direct validated status confirmation fields | [9.2.1.3], [9.2.3.1.2] |
 

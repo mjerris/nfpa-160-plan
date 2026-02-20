@@ -12,7 +12,7 @@ Performers are linked to a fire performance through Role Assignment records in E
 
 | Validation | Required | Section | Guidance |
 |---|---|---|---|
-| All performers meet operator competency requirements (experience/training or AHJ-acceptable license) | Yes | [14.1], [8.1.2] | Validated from Person Record (Entity 2.1) |
+| All performers meet flame effect operator competency requirements (experience/training or AHJ-acceptable license) | Yes | [14.1], [8.1.2] | Validated from Person Record (Entity 2.1) |
 | All performers have substance abuse acknowledgment signed | Yes | [14.1.1.1] | Validated from Person Record (Entity 2.1) |
 | Each performer physically capable of executing their performance | Yes | [14.1.1.2] | UI confirmation during role assignment |
 | At least one cast member designated as flame effect operator | Yes | [14.1.1.3.1] | At least one Role Assignment for this submission must have Role = Flame Effect Operator; new in 2026 edition |
@@ -23,7 +23,7 @@ Performers are linked to a fire performance through Role Assignment records in E
 | Field | Required | Section | Guidance |
 |---|---|---|---|
 | Each routine rehearsed in costume with fire prior to initial audience performance | Yes | [14.1.2.1] | Also required after any change to performance |
-| Flame effects operator confirms cast and routine are ready for audience performance | Yes | [14.1.2.2] | |
+| Flame effect operator confirms cast and routine are ready for audience performance | Yes | [14.1.2.2] | |
 
 ## 8.3 Safety Personnel — Spotters
 
@@ -86,7 +86,7 @@ Performers are linked to a fire performance through Role Assignment records in E
 | Fuel-soaked wicks not moved through audience without at least one spotter | Yes | [14.4.2.4.2] | |
 | Audience prohibited within 25 ft (7.6 m) of fueling area | Yes | [14.4.2.4.3] | |
 | Smoking and ignition sources prohibited within 25 ft (7.6 m) of fueling area | Yes | [14.4.2.4.4] | |
-| Fuel stations attended by operator or spotter until hazard removed | Yes | [14.4.2.2] | |
+| Fuel stations attended by flame effect operator or spotter until hazard removed | Yes | [14.4.2.2] | |
 | Fuel containers and dip buckets sealed when not in use | Yes | [14.4.2.3] | |
 | Fire props cooled to ambient temperature before fueling | Yes | [14.3.5.3] | |
 | Excess fuel removed and stored per NFPA 1 or NFPA 30 | Yes | [14.3.5.2] | |
