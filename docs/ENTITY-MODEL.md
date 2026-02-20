@@ -46,15 +46,15 @@ SUBMISSION (Production/Event)
 │   └── Post-Performance Procedures
 │
 │   ══════════════════════════════════════════════════════════
-├── PROCEDURES (reusable across submissions)
-│   ├── Operating Procedures
-│   ├── Rehearsal / Pre-Show Procedures
-│   ├── Show Operations
-│   ├── Post-Show Procedures
-│   ├── Emergency Response Procedures
-│   ├── Maintenance Procedures
-│   ├── Housekeeping
-│   └── Protective Clothing
+├── PROCEDURES (each sub-entity independently reusable)
+│   ├── Operating Procedures ←────────────┐
+│   ├── Rehearsal / Pre-Show Procedures ──┤
+│   ├── Show Operations ──────────────────┤
+│   ├── Post-Show Procedures ─────────────┼── each can be saved
+│   ├── Emergency Response Procedures ────┤   and reused across
+│   ├── Maintenance Procedures ───────────┤   submissions
+│   ├── Housekeeping ─────────────────────┤
+│   └── Protective Clothing ──────────────┘
 ├── FIRE PROTECTION PLAN
 │   ├── Fire Extinguisher Plan (Temporary)
 │   ├── Fire Hazards Evaluation (Permanent)
@@ -75,7 +75,7 @@ SUBMISSION (Production/Event)
 | Production/Event → Fire Performance | 1 : 0..many | Zero or more fire performances per submission |
 | Production/Event → Site Plan | 1 : 1 | One site plan per submission |
 | Production/Event → Personnel | 1 : many | One or more operators, assistants, spotters |
-| Production/Event → Procedures | 1 : many | Multiple procedure types per submission |
+| Production/Event → Procedure (each type) | 1 : 0..many | Zero or more of each procedure sub-entity; each independently reusable |
 | Production/Event → Fire Protection Plan | 1 : 1 | One fire protection plan per submission |
 | Production/Event → Holding/Storage | 1 : many | One or more holding/storage areas |
 | Production/Event → Attachments | 1 : many | Multiple required documents |
@@ -96,7 +96,15 @@ The following entities are designed to be **saved independently** and reused acr
 - **Flame Effect** (Entity 3) — apparatus-based effects with control systems (Chapter 9); an artist's saved effect can be included in multiple event submissions
 - **Fire Performance** (Entity 8) — performer-based effects with props/wicks (Chapter 14); a performer's saved routine can be included in multiple event submissions
 - **Personnel** (Entity 2) — operator profiles, assistant records
-- **Procedures** (Entity 5) — operating, emergency, maintenance procedures
+- **Procedures** (Entity 5) — each sub-entity is independently reusable:
+  - Operating Procedures
+  - Rehearsal / Pre-Show Procedures
+  - Show Operations
+  - Post-Show Procedures
+  - Emergency Response Procedures
+  - Maintenance Procedures
+  - Housekeeping
+  - Protective Clothing
 
 **Entity 3 and Entity 8 are peer-level core entities.** Both are reusable, and a submission can include either or both types.
 

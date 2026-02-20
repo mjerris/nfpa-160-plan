@@ -36,7 +36,15 @@ A key design goal is that artists **define things once and reuse them**. An arti
 - Entity 3: Individual Flame Effect (apparatus-based effects with control systems — Chapter 9 applies)
 - Entity 8: Fire Performance (performer-based effects with props/wicks — Chapter 14 applies)
 - Entity 2: Personnel (operator profiles, assistant records)
-- Entity 5: Procedures (operating, emergency, maintenance — many are equipment-specific, not venue-specific)
+- Entity 5: Procedures — each sub-entity is independently reusable:
+  - Operating Procedures
+  - Rehearsal / Pre-Show Procedures
+  - Show Operations
+  - Post-Show Procedures
+  - Emergency Response Procedures
+  - Maintenance Procedures
+  - Housekeeping
+  - Protective Clothing
 
 **Entity 3 and Entity 8 are peer-level core entities.** A submission can include:
 - One or more flame effects only

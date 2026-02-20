@@ -1,6 +1,16 @@
 # Entity 5: Procedures
 
-Reusable across submissions. Each procedure type can be saved and attached to a submission.
+Each procedure sub-entity below is **independently reusable** across submissions. Artists can save individual procedure records (e.g., a standard emergency response procedure, a maintenance plan for a specific device) and attach them to multiple submissions without re-entering data.
+
+**Reusable sub-entities:**
+- 5.1 Operating Procedures
+- 5.2 Rehearsal / Pre-Show Procedures
+- 5.3 Show Operations
+- 5.4 Post-Show Procedures
+- 5.5 Emergency Response Procedures
+- 5.6 Maintenance Procedures
+- 5.7 Housekeeping
+- 5.8 Protective Clothing
 
 ## 5.1 Operating Procedures
 
