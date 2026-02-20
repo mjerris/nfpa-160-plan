@@ -35,7 +35,7 @@ A key design goal is that artists **define things once and reuse them**. An arti
 **Reusable across submissions:**
 - Entity 3: Individual Flame Effect (apparatus-based effects with control systems — Chapter 9 applies). Design drawings and test records are stored on the effect and travel with it.
 - Entity 8: Fire Performance (performer-based effects with props/wicks — Chapter 14 applies)
-- Entity 2: Personnel — person records are saved once and assigned to roles per submission via Role Assignment records; the same person can hold multiple roles (e.g., flame effect operator + spotter). Competency documents are stored on the person record.
+- Entity 2: Personnel — person records are saved once and assigned to roles per submission via Role Assignment records; the same person can hold multiple roles (e.g., flame effect operator + spotter). Competency evidence is stored on the person record.
 - Entity 4: Site Plan — reusable for the same venue across submissions; diagrams stored via Active Storage
 - Entity 5: Procedures — each sub-entity is independently reusable:
   - Operating Procedures
